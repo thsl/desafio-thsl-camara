@@ -193,9 +193,27 @@
                     </ul>
                 </li>
                 <li class="menu-item"><a href="#">Participe!</a></li>
-                <li class="menu-item"><a href="#" title="Buscar"><span class="ti-search"></span></a>
-                <!-- https://codepen.io/silenzium/pen/ZbKmRR -->
+
+                <li class="menu-item">
+
+                    <form class="search-form searchbar" role="search" id="hiddenSearchBox" action="" method="get">
+                        <div class="input-group">
+                            <input type="hidden" name="id" value="63">
+                            <input type="search" name="keywords" class="form-control" placeholder="Search..">
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-default" data-toggle="searchbar"
+                                        data-target="#hiddenSearchBox">
+                                    <span class="ti-search"></span> <span class="sr-only">Submit</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </li>
+
+
+                <!--<li class="menu-item"><a href="#" title="Buscar"><span class="ti-search"></span></a>
+                 https://codepen.io/silenzium/pen/ZbKmRR
+                </li>-->
             </ul>
         </div>
     </div>
@@ -301,7 +319,7 @@
 
 </footer>
 <script src="assets/js/jquery.js"></script>
-<script src="assets/js/jquery.mobile-1.4.5.min.js"></script>
+<!--<script src="assets/js/jquery.mobile-1.4.5.min.js"></script>-->
 <script src="assets/js/tether.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/theme.js"></script>
