@@ -1,10 +1,10 @@
 // mega-menu funcionar
-$(document).on('click', '.navbar-theme .dropdown-menu', function (e) {
+/*$(document).on('click', '.navbar-theme .dropdown-menu', function (e) {
     e.stopPropagation()
 });
 
 
-/* / Permite manipular a cor do svg via css
+ / Permite manipular a cor do svg via css
 $(function(){
     jQuery('img.svg').each(function(){
         var $img = jQuery(this);
@@ -40,7 +40,7 @@ $(function(){
 
     });
 });
-*/
+
 
 
 (function ($) {
@@ -52,4 +52,19 @@ $(function(){
             $(this).parent().toggleClass('open');
         });
     });
-})(jQuery);
+})(jQuery);*/
+
+$(function () {
+    $('.carousel').carousel({
+        interval: false
+    });
+
+});
+$(document).ready(function() {
+    $(".carousel-inner").swiperight(function() {
+        $(this).parent().carousel('prev');
+    });
+    $(".carousel-inner").swipeleft(function() {
+        $(this).parent().carousel('next');
+    });
+});  
