@@ -67,4 +67,4 @@ $(document).ready(function() {
     $(".carousel-inner").swipeleft(function() {
         $(this).parent().carousel('next');
     });
-});  
+});
