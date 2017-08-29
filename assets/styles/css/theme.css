@@ -1326,7 +1326,7 @@ input[type=radio] {
   font-size: 0.9em;
   position: relative;
   border: 0;
-  margin-bottom: 0;
+  margin-bottom: 1em;
   padding-top: 0.5em;
 }
 .navbar-theme a {
@@ -1340,7 +1340,7 @@ input[type=radio] {
   font-weight: 700;
   width: 14.285%;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 @media (max-width: 768px) {
   .navbar-theme .menu-item {
@@ -1518,7 +1518,6 @@ input[type=radio] {
 }
 .navbar-theme .navigation-theme > li > a {
   padding: 0.5em;
-  border-bottom: 2px solid transparent;
   white-space: nowrap;
 }
 @media (max-width: 880px) {
@@ -1534,9 +1533,8 @@ input[type=radio] {
 .navbar-theme .navigation-theme > .open > a,
 .navbar-theme .navigation-theme > .open > a:focus,
 .navbar-theme .navigation-theme > .open > a:hover {
-  color: #005689;
+  color: #1383C4;
   background-color: transparent;
-  border-bottom: 2px solid #005689;
 }
 .navbar-theme .navigation-theme .theme-submenu {
   color: #818181;
@@ -1574,7 +1572,7 @@ input[type=radio] {
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
   opacity: 1;
-  margin-top: 1.2em;
+  margin-top: 0.5em;
 }
 @media (max-width: 768px) {
   .navbar-theme .navigation-theme .open > .dropdown-menu {
@@ -1611,7 +1609,7 @@ input[type=radio] {
   border-color: rgba(255, 255, 255, 0);
   border-bottom-color: #ffffff;
   border-width: 10px;
-  left: 50px;
+  left: 65px;
   margin-left: 0;
 }
 @media (max-width: 768px) {
