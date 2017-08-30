@@ -1,0 +1,47 @@
+.conteudo-global {
+  margin: 1.5em 0;
+  padding: 1.5em 0;
+}
+
+.dest-one {
+  .dest-image {
+    background-color: #ccc;
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 0.25em;
+    height: 0;
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+    width: 100%;
+    .dest-pic-cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      .dest-img {
+        color: transparent;
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+  .dest-a {
+    color: @link-color-dark-blue;
+    &:hover {
+      color: @link-color-blue;
+      text-decoration: none;
+    }
+    .dest-title {
+      font-weight: 700;
+    }
+   .dest-desc{
+     color: @text-color;
+     &:hover {
+       color: @link-color-blue;
+       text-decoration: none;
+     }
+   }
+  }
+}

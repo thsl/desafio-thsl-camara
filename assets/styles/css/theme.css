@@ -1318,8 +1318,16 @@ input[type=radio] {
   font-weight: 700;
   font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0.5em;
+  margin: 0.5em;
   width: auto;
   display: initial;
+}
+.separator-blue a {
+  color: #000000;
+}
+.separator-blue a:hover {
+  color: #53b7f6;
+  text-decoration: none;
 }
 .navbar-theme {
   font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1418,9 +1426,8 @@ input[type=radio] {
   float: left;
 }
 .navbar-theme .nav-top .links-externos .links-items {
-  margin: 0;
+  margin: 0.5em 0 0 1.8em;
   padding: 0;
-  margin-top: 0.5em;
   list-style: none;
   display: inline-table;
 }
@@ -1431,8 +1438,7 @@ input[type=radio] {
 }
 @media (max-width: 768px) {
   .navbar-theme .nav-top .links-externos {
-    float: none;
-    text-align: left;
+    display: none;
   }
 }
 .navbar-theme .nav-top .links-ferramentas {
@@ -1545,7 +1551,6 @@ input[type=radio] {
 }
 .navbar-theme .navigation-theme .theme-submenu > li {
   padding: 0.5em 0;
-  border-bottom: 1px solid #f2f2f2;
 }
 .navbar-theme .navigation-theme .theme-submenu > li:last-child {
   border: 0;
@@ -1566,6 +1571,7 @@ input[type=radio] {
   .navbar-theme .navigation-theme .theme-submenu {
     border: 0;
     margin-bottom: 1em;
+    text-align: center;
   }
 }
 .navbar-theme .navigation-theme .open > .dropdown-menu {
@@ -1730,7 +1736,7 @@ input[type=radio] {
   color: #80ccfa;
   box-shadow: none;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .navbar-theme .nav-bar-custom .navbar-nav {
     display: inline;
   }
@@ -1788,7 +1794,6 @@ input[type=radio] {
   display: block;
   width: 30px;
   overflow: hidden;
-  border-left: 2px solid transparent;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -1867,6 +1872,9 @@ input[type=radio] {
   color: #555 !important;
 }
 @media (max-width: 767px) {
+  .navbar-theme .input-group {
+    margin: 0 1em;
+  }
   .navbar-theme .search-form {
     float: none;
     margin-top: 0px;
@@ -1877,11 +1885,13 @@ input[type=radio] {
     width: auto;
     -webkit-transition: none;
     transition: none;
-    border-left: 2px solid #5F5F5F;
+    background: #FFFFFF;
+    border: 1px solid #C2C2C2;
+    border-radius: 100px;
   }
   .navbar-theme .search-form .btn {
-    background-color: #5F5F5F;
-    border: 1px solid #5F5F5F;
+    background-color: transparent;
+    border: 0;
     -webkit-transition: none;
     transition: none;
   }
@@ -1928,6 +1938,50 @@ input[type=radio] {
     padding-right: 32px;
     width: 32px;
   }
+}
+.conteudo-global {
+  margin: 1.5em 0;
+  padding: 1.5em 0;
+}
+.dest-one .dest-image {
+  background-color: #ccc;
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 0.25em;
+  height: 0;
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+}
+.dest-one .dest-image .dest-pic-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.dest-one .dest-image .dest-pic-cover .dest-img {
+  color: transparent;
+  height: auto;
+  width: 100%;
+}
+.dest-one .dest-a {
+  color: #005689;
+}
+.dest-one .dest-a:hover {
+  color: #1383C4;
+  text-decoration: none;
+}
+.dest-one .dest-a .dest-title {
+  font-weight: 700;
+}
+.dest-one .dest-a .dest-desc {
+  color: #333;
+}
+.dest-one .dest-a .dest-desc:hover {
+  color: #1383C4;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=theme.css.map */
