@@ -2008,6 +2008,11 @@ input[type=radio] {
     padding: 0;
   }
 }
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+}
 .ui-mobile,
 .ui-page,
 .ui-page-theme-a,
