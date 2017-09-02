@@ -5,23 +5,32 @@
   font-weight: 700;
   font-family: @sec-fontfamily;
   padding: 0.5em;
+  margin: 0.5em;
   background: rgba(80, 183, 72, 0.22);
   width: auto;
   display: initial;
+  a {
+    color: @white;
+    &:hover {
+      color: @white;
+      text-decoration: none;
+    }
+  }
 }
+
 .separator-blue {
   color: @blue-darken-one;
   text-transform: uppercase;
   font-size: @fontsize-sm;
   font-weight: 700;
   font-family: @sec-fontfamily;
-  padding: 0.5em;
-  margin: 0.5em;
+  padding: 0 0 0.5em 0;
+  margin: 0 0 0.5em 0;
   width: auto;
-  display: initial;
-  a{
-    color:@blue-darken-one;
-    &:hover{
+  display: block;
+  a {
+    color: @blue-darken-one;
+    &:hover {
       color: @blue-light-one;
       text-decoration: none;
     }

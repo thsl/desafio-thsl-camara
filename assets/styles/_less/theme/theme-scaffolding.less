@@ -10,11 +10,27 @@
 }
 
 .font-first {
-  font-family: @first-fontfamily;
+  font-family: @first-fontfamily !important;
+  &.h1, h1,
+  &.h2, h2,
+  &.h3, h3,
+  &.h4, h4,
+  &.h5, h5,
+  &.h6, h6 {
+    font-family: @first-fontfamily !important;
+  }
 }
 
 .font-second {
-  font-family: @sec-fontfamily;
+  font-family: @sec-fontfamily !important;
+  &.h1, h1,
+  &.h2, h2,
+  &.h3, h3,
+  &.h4, h4,
+  &.h5, h5,
+  &.h6, h6 {
+    font-family: @sec-fontfamily !important;
+  }
 }
 
 // Imagens adaptativas
@@ -61,27 +77,27 @@
 /* Dividers */
 
 .divider-top {
-  margin-top: 1em;
-  padding-top: 1em;
-  border-top: 1px solid #c8c8c8;
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  border-top: 1px solid #dadada;
 }
 
 .divider-right {
-  margin-right: 1em;
-  padding-right: 1em;
-  border-right: 1px solid #c8c8c8;
+  margin-right: 1.5em;
+  padding-right: 1.5em;
+  border-right: 1px solid #dadada;
 }
 
 .divider-bottom {
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-  border-bottom: 1px solid #c8c8c8;
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #dadada;
 }
 
 .divider-left {
-  margin-left: 1em;
-  padding-left: 1em;
-  border-left: 1px solid #c8c8c8;
+  margin-left: 1.5em;
+  padding-left: 1.5em;
+  border-left: 1px solid #dadada;
 }
 
 // ---------------------------------------------------------------
@@ -91,6 +107,15 @@
 // ---------------------------------------------------------------
 
 /* Cores genéricas, para textos */
+.text-default {
+  color: @text-color;
+  &.a {
+    color: @text-color;
+  }
+  a {
+    color: @text-color;
+  }
+}
 .text-white {
   color: #fff;
   &.a {
@@ -512,6 +537,32 @@ input[type=checkbox], input[type=radio] {
 .full-height {
   height: 100%;
 }
+
 .half-height {
   height: 50%;
+}
+
+// pesos
+
+.font-thin {
+  font-weight: 100;
+}
+
+.font-regular {
+  font-weight: normal;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+// links
+.link-nodecoration {
+  text-decoration: none !important;
+  + a {
+    text-decoration: none !important;
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
 }

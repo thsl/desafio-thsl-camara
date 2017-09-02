@@ -4,6 +4,10 @@
 });
 
 
+$(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+
  / Permite manipular a cor do svg via css
 $(function(){
     jQuery('img.svg').each(function(){
@@ -66,6 +70,13 @@ $(document).ready(function() {
 
 */
 
+// menu superior
+
+$(document).on('click', '.navbar-theme .dropdown-menu', function (e) {
+    e.stopPropagation()
+});
+
+// carrossel
 $(function () {
     $('.carousel').carousel({
         interval: false
@@ -73,7 +84,7 @@ $(function () {
 
 });
 
-
+// Busca: abre e fecha
 if (typeof jQuery === "undefined") {
     throw new Error("jQuery required");
 }
@@ -191,3 +202,5 @@ if (typeof jQuery === "undefined") {
 
 
 }(jQuery);
+
+
