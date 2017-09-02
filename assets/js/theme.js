@@ -84,6 +84,10 @@ $(function () {
 
 });
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+});
+
 // Busca: abre e fecha
 if (typeof jQuery === "undefined") {
     throw new Error("jQuery required");
