@@ -1,39 +1,6 @@
 
 .dest-one {
-  .dest-image {
-    background-color: #ccc;
-    background-position: 50%;
-    background-size: cover;
-    border-radius: 0.25em;
-    height: auto;
-    overflow: hidden;
-    padding-top: 75%;
-    position: relative;
-    width: 100%;
-    margin-bottom: 1em;
-    @media (max-width: @screen-sm) {
-      padding-top: 50%;
-      margin-bottom: 1em;
-    }
-    .dest-pic-cover {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      display: block;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      .dest-img {
-        flex-shrink: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-  }
+
   .dest-a {
     color: @link-color-dark-blue;
     display: block;
@@ -61,10 +28,45 @@
     }
   }
   @media (max-width: @screen-sm) {
-    padding:1em 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
     margin: 1em 0;
-    border-radius: 6px;
+    border-radius: @border-radius-md;
     background: @white;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    .shadown-sm();
+  }
+}
+
+.dest-image {
+  background-color: #ccc;
+  background-position: 50%;
+  background-size: cover;
+  border-radius: @border-radius-sm;
+  height: auto;
+  overflow: hidden;
+  padding-top: 75%;
+  position: relative;
+  width: 100%;
+  margin-bottom: 1em;
+  @media (max-width: @screen-sm) {
+    padding-top: 50%;
+    margin-bottom: 1em;
+  }
+  .dest-pic-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .dest-img {
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 }

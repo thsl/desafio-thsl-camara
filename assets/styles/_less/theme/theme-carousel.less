@@ -11,6 +11,7 @@
 
 #destaques {
   height: 70%;
+  min-height: 29.688em;
   background-color: #000;
   .carousel {
     height: @destaque-height;
@@ -47,6 +48,7 @@
       .carousel-content {
         height: @destaque-height;
         position: relative;
+        overflow: hidden;
       }
       .grid-destaque {
         height: @destaque-height;
@@ -54,7 +56,6 @@
           position: relative;
           width: 100%;
           height: 100%;
-          overflow: hidden;
 
           .grid-destaque-img {
             .background-cover();

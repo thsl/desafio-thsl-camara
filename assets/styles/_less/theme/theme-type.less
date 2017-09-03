@@ -16,9 +16,10 @@ a {
 }
 
 p {
-  font-size: 1em;
+  font-size: @fontsize-md;
   letter-spacing: -0.01rem;
   margin: 0 0 0.5em;
+  line-height: 1.4;
 }
 
 // tamanhos de fonte do Hs
@@ -46,7 +47,7 @@ h6 .h6 {
 }*/
 
 h1, .h1 {
-  font-size: 2.074em;
+  font-size: @fontsize-xxl;
   line-height: 1.1em;
   @media (max-width: @screen-sm) {
   }
@@ -55,7 +56,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 1.728em;
+  font-size: @fontsize-xl;
   line-height: 1.2em;
   @media (max-width: @screen-sm) {
   }
@@ -64,7 +65,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 1.44em;
+  font-size: @fontsize-lg;
   line-height: 1.2em;
   @media (max-width: @screen-sm) {
   }
@@ -73,23 +74,23 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 1.2em;
+  font-size: @fontsize-mdplus;
   line-height: 1.1em;
 }
 
 h5, .h5 {
-  font-size: 1em;
+  font-size: @fontsize-md;
   line-height: 1.3em;
-}
-
-h6, .h6 {
-  font-size: 0.833em;
-  line-height: 1em;
   font-weight: 700;
 }
 
+h6, .h6 {
+  font-size: @fontsize-md;
+  line-height: 1.3em;
+}
+
 small, .font_small {
-  font-size: 0.63em;
+  font-size: @fontsize-sm;
 }
 
 ///* fontes */

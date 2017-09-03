@@ -21,7 +21,8 @@
 <nav class="navbar navbar-theme white-theme navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span
+            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1"
+                    class="navbar-toggle fechanavbr"><span
                     class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 
             <div class="logo-camara">
@@ -33,7 +34,7 @@
 
         </div>
         <div id="navbar-collapse-1" class="navbar-collapse collapse collapse-right">
-            <a href="#" class="close-collapsenavbar" data-toggle="collapse" data-target="#navbar-collapse-1"><span
+            <a href="#" class="close-collapsenavbar fechanavbr" data-toggle="collapse" data-target="#navbar-collapse-1"><span
                     class="ti-close"></span></a>
 
             <div class="nav-top clearfix">
@@ -624,7 +625,7 @@
                                     Sessões
                                 </h5>
                             </div>
-                            <div class="panel-body">
+                            <div class="panel-body pt-0">
                                 <div class="panel-offsetcontent">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <iframe class="embed-responsive-item"
@@ -750,42 +751,444 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <div>
-
+                <div class="custom-tabs padding-bigcontent pb-md">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
                                                                   data-toggle="tab">Proposições</a></li>
                         <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Legislação</a>
+                        </li>
                     </ul>
 
                     <!-- Tab panes -->
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="home">...</div>
-                        <div role="tabpanel" class="tab-pane" id="profile">...</div>
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <p class="separator-blue">Busca de proposições</p>
+                                        <div class="mt-md">
+                                            <form class="form-inline">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="buscaprop">Texto da proposição</label>
+                                                    <input type="buscaprop" class="form-control" id="buscaprop"
+                                                           placeholder="Texto da proposição">
+
+                                                </div>
+                                                <select class="form-control">
+                                                    <option value="" disabled selected>Selecione o tipo</option>
+                                                    <option>Projeto de Lei</option>
+                                                    <option>Projeto de Lei Complementar</option>
+                                                    <option>Medida Provisória</option>
+                                                    <option>Proposta de Emenda à Constituição</option>
+                                                    <option>Projeto de Decreto Legislativo</option>
+                                                </select>
+
+                                                <button type="submit" class="btn btn-primary">
+                                                    <span class="ti-search"></span>
+                                                </button>
+                                                <small class="help-block">Utilize números ou letras</small>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 divider-top">
+                                        <p class="separator-blue">Proposições em destaque</p>
+                                        <div class="mt-md">
+                                            <a class="" href="#">
+                                                <h4>1º PEC 31/2007</h4>
+                                            </a>
+                                            <p class="fontsize-sm">Altera o Sistema Tributário Nacional, unifica a
+                                                legislação do Imposto
+                                                sobre Operações Relativas à Circulação de Mercadorias e sobre Prestações
+                                                de Serviços de Transporte Interestadual e Intermunicipal e de
+                                                Comunicação, dentre outras providências.</p>
+                                            <small><strong>Situação:</strong> Pronta para Pauta no PLENÁRIO (PLEN)
+                                            </small>
+                                        </div>
+                                        <div class="divider-top">
+                                            <a class="" href="#">
+                                                <h4>1º PEC 31/2007</h4>
+                                            </a>
+                                            <p class="fontsize-sm">Altera o Sistema Tributário Nacional, unifica a
+                                                legislação do Imposto
+                                                sobre Operações Relativas à Circulação de Mercadorias e sobre Prestações
+                                                de Serviços de Transporte Interestadual e Intermunicipal e de
+                                                Comunicação, dentre outras providências.</p>
+                                            <small><strong>Situação:</strong> Pronta para Pauta no PLENÁRIO (PLEN)
+                                            </small>
+                                        </div>
+                                        <div class="divider-top">
+                                            <a href="#">Confira todas</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">
+
+
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <p class="separator-blue">Busca na legislação</p>
+                                        <div class="mt-md">
+                                            <form class="form-inline">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="buscaleg">Texto da proposição</label>
+                                                    <input type="buscaleg" class="form-control" id="buscaleg"
+                                                           placeholder="Texto da legislação">
+
+                                                </div>
+                                                <select class="form-control">
+                                                    <option value="" disabled selected>Selecione o tipo</option>
+                                                    <option>Projeto de Lei</option>
+                                                    <option>Projeto de Lei Complementar</option>
+                                                    <option>Medida Provisória</option>
+                                                    <option>Proposta de Emenda à Constituição</option>
+                                                    <option>Projeto de Decreto Legislativo</option>
+                                                </select>
+
+                                                <button type="submit" class="btn btn-primary">
+                                                    <span class="ti-search"></span>
+                                                </button>
+                                                <small class="help-block">Utilize números ou letras</small>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 divider-top">
+                                        <p class="separator-blue">Mais procuradas</p>
+                                        <div class="mt-md">
+                                            <a class="" href="#">
+                                                <h4>Lei nº 13.474, de 23 de Agosto de 2017</h4>
+                                            </a>
+                                            <p class="fontsize-sm">Transforma a Autoridade Pública Olímpica (APO) na
+                                                Autoridade de
+                                                Governança do Legado Olímpico (Aglo); altera a Lei nº 11.356, de 19 de
+                                                outubro de 2006; revoga a Lei nº 12.396, de 21 de março de 2011; e dá
+                                                outras providências.</p>
+                                            <small><strong>Legislação Federal</strong> 23/08/2017 - 00:00
+                                            </small>
+                                        </div>
+                                        <div class="divider-top">
+                                            <a class="" href="#">
+                                                <h4>Lei nº 13.474, de 23 de Agosto de 2017</h4>
+                                            </a>
+                                            <p class="fontsize-sm">Transforma a Autoridade Pública Olímpica (APO) na
+                                                Autoridade de
+                                                Governança do Legado Olímpico (Aglo); altera a Lei nº 11.356, de 19 de
+                                                outubro de 2006; revoga a Lei nº 12.396, de 21 de março de 2011; e dá
+                                                outras providências.</p>
+                                            <small><strong>Legislação Federal</strong> 23/08/2017 - 00:00
+                                            </small>
+                                        </div>
+                                        <div class="divider-top">
+                                            <a href="#">Confira todas</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
                     </div>
 
                 </div>
             </div>
-            <div class="col-md-4"></div>
-        </div>
-    </div>
-    <div class="special-striper-back">
-        <div class="container">
-            <div class="">
+            <div class="col-md-4">
+
+                <section>
+                    <div class="panel panel-default panel-box-one">
+                        <div class="panel-heading">
+                            <h5 class="text-light-gray text-uppercase font-second">
+                                Conheça os deputados
+                            </h5>
+                        </div>
+                        <div class="panel-body pt-0">
+                            <div class="panel-offsetcontent">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item"
+                                            src="https://www.youtube.com/embed/jxy2Ts-NjxE?rel=0&amp;showinfo=0"></iframe>
+                                </div>
+                            </div>
+                            <div class="divider-bottom">
+                                <h5><a href="#">Vídeo: Conheça a Câmara e o trabalho dos deputados</a></h5>
+                                <p>Considerado o maior símbolo da capital do País, abriga os trabalhos dos deputados</p>
+                            </div>
+                            <div class="divider-bottom text-center font-second">
+                                <div class="rouded-image-sm center-block">
+                                    <a href="#"><img src="assets/img/fotos/deputados/dep-001.jpg"></a>
+                                </div>
+                                <h5 class="mt-md"><a href="#">SHÉRIDAN ESTÉRFANY</a></h5>
+                                <p><strong>Partido/UF:</strong> PSDB / RR / Titular</p>
+                            </div>
+                            <div class="text-center font-second">
+                                <div class="rouded-image-sm center-block">
+                                    <a href="#"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
+                                </div>
+                                <h5 class="mt-md"><a href="#">MAURO MARIANI</a></h5>
+                                <p><strong>Partido/UF:</strong> PSDB / RR / Titular</p>
+                            </div>
+
+                        </div>
+                        <div class="panel-footer">
+                            <p><a href="#" class="font-second">Conheça todos</a></p>
+                        </div>
+                    </div>
+                </section>
 
             </div>
         </div>
     </div>
+    <div class="special-striper-back text-white"
+         style="background-image: url('assets/img/estrutura/back-historia.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Conheça a Câmara</h2>
+                    <p class="fontsize-mdplus">Autêntica representante do povo brasileiro, exerce atividades que
+                        viabilizam a realização dos anseios da população</p>
+
+                    <article>
+                        <div class="divider-top">
+                            <div class="row">
+
+                                <div class="col-sm-4">
+                                    <a href="#">
+                                        <div class="dest-image">
+                                            <div class="dest-pic-cover">
+                                                <img class="dest-img" src="assets/img/fotos/foto-sm-007.jpg">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <a href="#" class="dest-a">
+                                        <h5 class="dest-title">Em decisão inédita, Câmara dos Deputados anuncia
+                                            corte de
+                                            despesas e aumento de receitas</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+                <div class="col-sm-5 col-sm-offset-1">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="separator-white">Nomes na história da câmara</p>
+                        </div>
+                    </div>
+                    <div class="row mt-md">
+                        <div class="col-xs-3">
+                            <div class="rouded-image-sm center-block">
+                                <a href="#"><img src="assets/img/fotos/deputados/dep-005.jpg"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-9">
+                            <p class="mt-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+                    </div>
+                    <div class="row mt-lg">
+                        <div class="col-xs-3">
+                            <div class="rouded-image-sm center-block">
+                                <a href="#"><img src="assets/img/fotos/deputados/dep-005.jpg"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-9">
+                            <p class="mt-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 <!-- /.conteudo-global -->
 
 
 <footer>
+    <div class="footer-global">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="assets/img/logos/logo-camara-bw.png" class="img-adaptative">
+                            </div>
+                            <div class="col-md-8">
+                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-right">
+                            <ul class="list-unstyled list-inline">
+                                <li>
+                                    <a href="#" class="btn btn-link btn-lg link-nodecoration" role="button"><span
+                                            class="ti-facebook"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-link btn-lg link-nodecoration" role="button">
+                                        <span class="ti-twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-link btn-lg link-nodecoration" role="button">
+                                        <span class="ti-youtube"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-lg">
+                    <ul>
+                        <li><a href="#">Notícias</a>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <ul class="col-sm-2 theme-submenu">
+                                                <li><strong class="title-nolink">Últimas Notícias</strong></li>
+                                                <li><a href="#">Administração pública</a></li>
+                                                <li><a href="#">Direito e justiça</a></li>
+                                                <li><a href="#">Política</a></li>
+                                                <li><a href="#">Segurança</a></li>
+                                                <li><a href="#">Trabalho e previdência</a></li>
+                                                <li><a href="#"><strong>Mais temas</strong></a></li>
+                                            </ul>
+                                            <ul class="col-sm-2 theme-submenu">
+                                                <li><strong class="title-nolink">TV Câmara</strong></li>
+                                                <li><a href="#">Comissões ao vivo</a></li>
+                                                <li><a href="#">Como sintonizar</a></li>
+                                                <li><a href="#">Programação semanal</a></li>
+                                                <li><a href="#">Conheça a tv câmara</a></li>
+                                                <li><a href="#"><strong>Confira todos</strong></a></li>
 
+                                            </ul>
+                                            <ul class="col-sm-2 theme-submenu">
+                                                <li><strong class="title-nolink">Rádio Câmara</strong></li>
+                                                <li><a href="#">Como sintonizar</a></li>
+                                                <li><a href="#">Programação semanal</a></li>
+                                                <li><a href="#">Conheça a rádio</a></li>
+
+                                            </ul>
+                                            <ul class="col-sm-2 theme-submenu">
+                                                <li><strong class="title-nolink">Mais</strong></li>
+                                                <li><a href="#">Assessoria de Imprensa</a></li>
+                                                <li><a href="#">Banco de Imagens</a></li>
+                                                <li><a href="#">Rede Legislativa de Rádio e TV</a></li>
+                                                <li><a href="#">Plenarinho</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Conheça</a>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <ul class="col-sm-6 theme-submenu">
+                                                <li><strong class="title-nolink">A nossa casa</strong></li>
+                                                <li><a href="#">História da Câmara</a>
+                                                </li>
+                                                <li><a href="#">O papel da Câmara</a></li>
+                                                <li><a href="#">Visite a Câmara</a></li>
+                                                <li><a href="#">Institucional</a></li>
+                                                <li><a href="#"><strong>Fale conosco</strong></a></li>
+                                            </ul>
+                                            <ul class="col-sm-6 theme-submenu">
+                                                <li><strong class="title-nolink">Deputados</strong></li>
+                                                <li><a href="#">Conheça os Deputados</a></li>
+                                                <li><a href="#">Discursos</a></li>
+                                                <li><a href="#">Lideranças partidárias</a></li>
+                                                <li><a href="#">Frentes e grupos parlamentares</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" data-toggle="dropdown"
+                               class="dropdown-toggle">Transparência</a>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <ul class="col-sm-6 theme-submenu">
+                                                <li><a href="#">Acesso à Informação</a></li>
+                                                <li><a href="#">Cota Parlamentar</a></li>
+                                                <li><a href="#">Viagens oficiais e passaportes</a></li>
+                                                <li><a href="#">Imóveis funcionais e auxílio-moradia</a></li>
+                                                <li><a href="#">Licitações e contratos</a></li>
+                                                <li><a href="#">Recursos humanos e concursos</a></li>
+                                                <li><a href="#">Receitas e despesas</a></li>
+                                                <li><a href="#">Dados abertos</a></li>
+                                            </ul>
+                                            <ul class="col-sm-6 theme-submenu">
+                                                <li><strong class="title-nolink">Orçamento da União</strong></li>
+                                                <li><a href="#">Leis orçamentárias</a></li>
+                                                <li><a href="#">Fiscalize</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Agenda</a>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <ul class="col-sm-12 theme-submenu">
+                                                <li><a href="#">Agenda geral</a></li>
+                                                <li><a href="#">Agenda de hoje</a></li>
+                                                <li><a href="#">Plenário</a></li>
+                                                <li><a href="#">Comissões</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Legislação</a>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <ul class="col-sm-12 theme-submenu">
+                                                <li><a href="#">Projetos de lei</a></li>
+                                                <li><a href="#">Proposições</a></li>
+                                                <li><a href="#">Legislação</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">Participe!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="assina"></div>
+    </div>
 </footer>
 <script src="assets/js/jquery.js"></script>
-<!--<script src="assets/js/jquery.mobile-1.4.5.min.js"></script>-->
 <script src="assets/js/tether.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/theme.js"></script>

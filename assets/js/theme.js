@@ -83,10 +83,18 @@ $(function () {
     });
 
 });
-
+// inicia os tooltips
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 });
+
+
+// faz o bloqueio do body quando o menu esta aberto
+
+$(".fechanavbr").click(function(){
+    $("body").toggleClass("nav-open")
+})
+
 
 // Busca: abre e fecha
 if (typeof jQuery === "undefined") {

@@ -49,27 +49,31 @@
 /* Tamanhos de Fontes */
 
 .fontsize-xs {
-  font-size: 0.64em;
+  font-size: @fontsize-xs;
 }
 
 .fontsize-sm {
-  font-size: 0.8em;
+  font-size: @fontsize-sm;
 }
 
 .fontsize-md {
-  font-size: 1em;
+  font-size: @fontsize-md;
+}
+
+.fontsize-mdplus {
+  font-size: @fontsize-mdplus;
 }
 
 .fontsize-lg {
-  font-size: 1.563em;
+  font-size: @fontsize-lg;
 }
 
 .fontsize-xl {
-  font-size: 1.953em;
+  font-size: @fontsize-xl;
 }
 
 .fontsize-xxl {
-  font-size: 2.441em;
+  font-size: @fontsize-xxl;
 }
 
 // ---------------------------------------------------------------
@@ -118,191 +122,192 @@
 }
 
 .text-white {
-  color: #fff;
+  color: #fff !important;
   &.a {
-    color: #fff;
+    color: #fff !important;
   }
   a {
-    color: #fff;
+    color: #fff !important;
   }
 }
 
 .text-red {
   color: @red !important;
   &.a {
-    color: @red;
+    color: @red !important;
   }
   a {
-    color: @red;
+    color: @red !important;
   }
 }
 
 .text-yellow {
   color: @yellow !important;
   &.a {
-    color: @yellow;
+    color: @yellow !important;
   }
   a {
-    color: @yellow;
+    color: @yellow !important;
   }
 }
 
 .text-aqua {
   color: @aqua !important;
   &.a {
-    color: @aqua;
+    color: @aqua !important;
   }
   a {
-    color: @aqua;
+    color: @aqua !important;
   }
 }
 
 .text-blue {
   color: @blue !important;
   &.a {
-    color: @blue;
+    color: @blue !important;
   }
   a {
-    color: @blue;
+    color: @blue !important;
   }
 }
 
 .text-dark-blue {
   color: @blue-two !important;
   &.a {
-    color: @blue-two;
+    color: @blue-two !important;
   }
   a {
-    color: @blue-two;
+    color: @blue-two !important;
   }
 }
 
 .text-black {
   color: @black !important;
   &.a {
-    color: @black;
+    color: @black !important;
   }
   a {
-    color: @black;
+    color: @black !important;
   }
 }
 
 .text-light-blue {
   color: @light-blue !important;
   &.a {
-    color: @light-blue;
+    color: @light-blue !important;
   }
   a {
-    color: @light-blue;
+    color: @light-blue !important;
   }
 }
 
 .text-light-blue-two {
   color: @blue-light-two !important;
   &.a {
-    color: @blue-light-two;
+    color: @blue-light-two !important;
   }
   a {
-    color: @blue-light-two;
+    color: @blue-light-two !important;
   }
 }
 
 .text-green {
   color: @green !important;
   &.a {
-    color: @green;
+    color: @green !important;
   }
   a {
-    color: @green;
+    color: @green !important;
   }
 }
 
 .text-navy {
   color: @navy !important;
   &.a {
-    color: @navy;
+    color: @navy !important;
   }
   a {
-    color: @navy;
+    color: @navy !important;
   }
 }
 
 .text-teal {
   color: @teal !important;
   &.a {
-    color: @teal;
+    color: @teal !important;
   }
   a {
-    color: @teal;
+    color: @teal !important;
   }
 }
 
 .text-olive {
   color: @olive !important;
   &.a {
-    color: @olive;
+    color: @olive !important;
   }
   a {
-    color: @olive;
+    color: @olive !important;
   }
 }
 
 .text-lime {
   color: @lime !important;
   &.a {
-    color: @lime;
+    color: @lime !important;
   }
   a {
-    color: @lime;
+    color: @lime !important;
   }
 }
 
 .text-orange {
   color: @orange !important;
   &.a {
-    color: @orange;
+    color: @orange !important;
   }
   a {
-    color: @orange;
+    color: @orange !important;
   }
 }
 
 .text-fuchsia {
   color: @fuchsia !important;
   &.a {
-    color: @fuchsia;
+    color: @fuchsia !important;
   }
   a {
-    color: @fuchsia;
+    color: @fuchsia !important;
   }
 }
 
 .text-purple {
   color: @purple !important;
   &.a {
-    color: @purple;
+    color: @purple !important;
   }
   a {
-    color: @purple;
+    color: @purple !important;
   }
 }
 
 .text-maroon {
   color: @maroon !important;
   &.a {
-    color: @maroon;
+    color: @maroon !important;
   }
   a {
-    color: @maroon;
+    color: @maroon !important;
   }
 }
+
 .text-light-gray {
   color: @light-gray !important;
   &.a {
-    color: @light-gray;
+    color: @light-gray !important;
   }
   a {
-    color: @light-gray;
+    color: @light-gray !important;
   }
 }
 
@@ -574,5 +579,19 @@ input[type=checkbox], input[type=radio] {
     &:hover {
       text-decoration: none !important;
     }
+  }
+}
+
+.rouded-image-sm {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  .shadown-sm();
+  img {
+    width: 100%;
+    height: auto;
   }
 }
