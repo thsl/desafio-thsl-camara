@@ -2,7 +2,7 @@
 .dest-one {
 
   .dest-a {
-    color: @link-color-dark-blue;
+    color: @text-color;
     display: block;
     padding-right: 1em;
 
@@ -43,7 +43,7 @@
   border-radius: @border-radius-sm;
   height: auto;
   overflow: hidden;
-  padding-top: 75%;
+  padding-top: 60%;
   position: relative;
   width: 100%;
   margin-bottom: 1em;
@@ -70,3 +70,68 @@
     }
   }
 }
+
+.categoria-news {
+
+  margin: 2em 0 2em 0;
+
+  .header-categoria {
+    padding: 0 0 .25em 0;
+    margin: 0 0 1em 0;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+
+  }
+
+  &.categoria-blue {
+    .header-categoria {
+      color: @blue;
+      border-bottom-color: 2px solid @blue;
+      a {
+        color: @blue;
+      }
+    }
+    .separator {
+      color: @blue;
+    }
+  }
+
+  &.categoria-green {
+    .header-categoria {
+      color: @green;
+      border-bottom: 2px solid @green;
+      a {
+        color: @green;
+      }
+    }
+    .separator {
+      color: @green;
+    }
+  }
+  &.categoria-teal {
+    .header-categoria {
+      color: @teal;
+      border-bottom: 2px solid @teal;
+      a {
+        color: @teal;
+      }
+    }
+    .separator {
+      color: @teal;
+    }
+  }
+  &.categoria-orange {
+    .header-categoria {
+      color: @orange;
+      border-bottom: 2px solid @orange;
+      a {
+        color: @orange;
+      }
+    }
+    .separator {
+      color: @orange;
+    }
+  }
+
+}
+
