@@ -73,11 +73,11 @@
 
 .categoria-news {
 
-  margin: 2em 0 2em 0;
+  margin: 0 0 3em 0;
 
   .header-categoria {
     padding: 0 0 .25em 0;
-    margin: 0 0 1em 0;
+    margin: 0 0 .5em 0;
     border-bottom-style: solid;
     border-bottom-width: 2px;
 
@@ -130,6 +130,30 @@
     }
     .separator {
       color: @orange;
+    }
+  }
+  &.categoria-purple {
+    .header-categoria {
+      color: @purple;
+      border-bottom: 2px solid @purple;
+      a {
+        color: @purple;
+      }
+    }
+    .separator {
+      color: @purple;
+    }
+  }
+  &.categoria-red {
+    .header-categoria {
+      color: @red;
+      border-bottom: 2px solid @red;
+      a {
+        color: @red;
+      }
+    }
+    .separator {
+      color: @red;
     }
   }
 
