@@ -91,10 +91,17 @@ $(function () {
 
 // faz o bloqueio do body quando o menu esta aberto
 
-$(".fechanavbr").click(function(){
+$(".fechanavbr").click(function () {
     $("body").toggleClass("nav-open")
-})
+});
+$(".barra-abre-navbar").click(function () {
+    $("body").toggleClass("nav-open")
+});
 
+// popovers
+$(function () {
+    $('[data-toggle="popover"]').popover()
+});
 
 // Busca: abre e fecha
 if (typeof jQuery === "undefined") {
@@ -215,4 +222,8 @@ if (typeof jQuery === "undefined") {
 
 }(jQuery);
 
+
+$('.barra-abre-navbar').on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+});
 
