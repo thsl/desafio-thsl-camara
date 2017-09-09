@@ -1,0 +1,20 @@
+.transp {
+  &-topo-intro {
+    background-color: @blue;
+    color: @white;
+    min-height: 20em;
+    padding: 3em 0;
+    a {
+      color: @white;
+      &:hover {
+        color: @white;
+      }
+    }
+    background: url("@{image-path-theme}/desenhos/tranp-lupa.png") no-repeat bottom right @blue;
+    background-size: contain;
+    @media (max-width: @screen-sm) {
+      background-image: none;
+    }
+  }
+}
+

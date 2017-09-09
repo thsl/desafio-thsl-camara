@@ -96,6 +96,19 @@
     }
   }
 
+  &.categoria-light-blue {
+    .header-categoria {
+      color: @light-blue;
+      border-bottom-color: 2px solid @light-blue;
+      a {
+        color: @light-blue;
+      }
+    }
+    .separator {
+      color: @light-blue;
+    }
+  }
+
   &.categoria-green {
     .header-categoria {
       color: @green;
@@ -106,6 +119,18 @@
     }
     .separator {
       color: @green;
+    }
+  }
+  &.categoria-light-green-two {
+    .header-categoria {
+      color: @light-green-two;
+      border-bottom: 2px solid @light-green-two;
+      a {
+        color: @light-green-two;
+      }
+    }
+    .separator {
+      color: @light-green-two;
     }
   }
   &.categoria-teal {
@@ -228,13 +253,13 @@
 }
 
 blockquote.citacao {
-  margin: 0.25em 1em;
-  padding: 0.35em 2em;
+  margin: 2em 1em;
+  padding: 1em 2em;
   font-size: @fontsize-mdplus;
   border-left: 5px solid @light-gray;
   font-style: italic;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
+  -webkit-margin-before: 2em;
+  -webkit-margin-after: 3em;
   -webkit-margin-start: 1em;
   -webkit-margin-end: 1em;
   position: relative;
@@ -253,7 +278,7 @@ blockquote.citacao {
     color: @gray;
     font-size: @fontsize-sm;
     display: block;
-    margin-top:0;
+    margin-top: 0;
     &:before {
       content: "\2014 \2009";
     }

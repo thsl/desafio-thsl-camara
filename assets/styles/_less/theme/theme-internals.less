@@ -11,6 +11,14 @@
   min-height: 6em;
 }
 
+.striper {
+  padding: 3em 0;
+  color: @white;
+  &.verde {
+    background-color: @green-one;
+  }
+}
+
 .conteudo-global-internas {
   min-height: 100%;
 
@@ -42,6 +50,38 @@
           color: @link-color-dark-blue;
           text-decoration: none;
         }
+      }
+    }
+  }
+}
+
+.list-links {
+  font-family: @sec-fontfamily;
+  //margin: 2em 1em;
+  li {
+    margin-bottom: 0.5em;
+  }
+}
+
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 40%;
+  .img-free {
+    position: absolute;
+  }
+}
+
+.header-macrotema {
+  .bck-macrotema {
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding: 1em 0;
+    .dropdown-menu {
+      li {
+        padding: 0.5em 0;
+        white-space: nowrap;
       }
     }
   }

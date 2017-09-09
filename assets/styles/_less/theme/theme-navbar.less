@@ -3,8 +3,8 @@
   font-size: @fontsize-sm;
   position: relative;
   border: 0;
-  margin-bottom: 1em;
-  padding-top: 0.5em;
+  margin-bottom: 0;
+  padding: 0.5em 0 1em 0;
   .close-collapsenavbar {
     display: none;
   }
@@ -66,14 +66,12 @@
     }
   }
   .nav-top {
-    position: absolute;
-    left: 0;
-    top: 1em;
     width: 100%;
     padding-right: 1em;
     padding-left: 1em;
     margin-right: auto;
     margin-left: auto;
+    margin-top: -2.3em;
     background-color: transparent;
     .clearfix();
 
@@ -98,6 +96,7 @@
     }
 
     .links-ferramentas {
+      //position: relative;
       float: right;
       .links-items {
         margin: 0;
@@ -129,8 +128,8 @@
       }
       .busca-desktop {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 1.2em;
+        right: 1em;
       }
     }
     @media (max-width: @screen-sm) {
@@ -710,6 +709,8 @@
 
       .busca-desktop {
         position: relative;
+        top: 0;
+        left: 0;
       }
 
       .close-collapsenavbar {

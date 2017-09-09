@@ -566,7 +566,7 @@ text-maroon
 }
 
 input[type=checkbox], input[type=radio] {
-  margin: 0.5em 0 0;
+  margin: 0;
   line-height: normal;
 }
 
@@ -620,8 +620,8 @@ input[type=checkbox], input[type=radio] {
 
 .rouded-image-sm {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 5em;
+  height: 5em;
   overflow: hidden;
   border-radius: 50%;
   border: 1px solid #ddd;
@@ -631,13 +631,19 @@ input[type=checkbox], input[type=radio] {
     height: auto;
   }
 }
-
-
-
-
-
-
-
+.rouded-image-xs {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  .shadown-sm();
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 // cores para os backgrounds genéricos //
 
@@ -751,5 +757,39 @@ input[type=checkbox], input[type=radio] {
   background-color: @gray !important;
 }
 
+// recortes
 
+.clip-left-sm {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(95% - 5vw));
+}
 
+.clip-right-sm {
+  clip-path: polygon(0 0, 100% 0, 100% calc(95% - 5vw), 0 100%);
+}
+
+.clip-top-right-sm {
+  clip-path: polygon(0% 0%, 100% calc(10%), 100% 100%, 0% 100%);
+}
+.clip-top-left-sm {
+  clip-path: polygon(0% calc(10%), 100% 0, 100% 100%, 0% 100%);
+}
+
+.grafico-md {
+  max-width: 23em;
+  width: 100%;
+}
+
+.spacer-sm {
+  margin: 1em 0;
+  padding: 1em 0;
+}
+
+.spacer-md {
+  margin: 3em 0;
+  padding: 3em 0;
+}
+
+.spacer-lg {
+  margin: 5em 0;
+  padding: 5em 0;
+}
