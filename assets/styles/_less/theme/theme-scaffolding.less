@@ -631,6 +631,7 @@ input[type=checkbox], input[type=radio] {
     height: auto;
   }
 }
+
 .rouded-image-xs {
   position: relative;
   width: 2.5em;
@@ -770,6 +771,7 @@ input[type=checkbox], input[type=radio] {
 .clip-top-right-sm {
   clip-path: polygon(0% 0%, 100% calc(10% - 5vw), 100% 100%, 0% 100%);
 }
+
 .clip-top-left-sm {
   clip-path: polygon(0% calc(10% - 5vw), 100% 0, 100% 100%, 0% 100%);
 }
@@ -792,4 +794,32 @@ input[type=checkbox], input[type=radio] {
 .spacer-lg {
   margin: 5em 0;
   padding: 5em 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hidden-xs {
+  @media (max-width: @screen-xs) {
+    display: none !important;
+  }
+}
+
+.hidden-sm {
+  @media (max-width: @screen-sm) {
+    display: none !important;
+  }
+}
+
+.hidden-md {
+  @media (max-width: @screen-md) {
+    display: none !important;
+  }
+}
+
+.hidden-lg {
+  @media (max-width: @screen-lg) {
+    display: none !important;
+  }
 }

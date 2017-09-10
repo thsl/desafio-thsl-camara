@@ -17,7 +17,7 @@
   }
   .icon-top {
     font-size: @fontsize-mdplus;
-    padding: 0.5em;
+    padding: 0.5em 0.5em 0 0;
   }
   .submenu-secondlevel {
     display: none;
@@ -94,8 +94,8 @@
   }
   .nav-top {
     width: 100%;
-    padding-right: 1em;
-    padding-left: 1em;
+    padding-right: 0;
+    padding-left: 0;
     margin-right: auto;
     margin-left: auto;
     margin-top: -2.3em;
@@ -105,14 +105,14 @@
     .links-externos {
       float: left;
       .links-items {
-        margin: 0.5em 0 0 1.8em;
+        margin: 0.5em 0 0 0;
         padding: 0;
         list-style: none;
         display: inline-table;
         & > li {
           display: inline-block;
           padding-right: 0.5em;
-          padding-left: 0.5em;
+          padding-left: 0;
         }
       }
       @media (max-width: @screen-sm) {
@@ -127,7 +127,7 @@
       float: right;
       .links-items {
         margin: 0;
-        padding: 0.5em 2em 0 0;
+        padding: 0.5em 3em 0 0;
         //margin-top: 0.5em;
         list-style: none;
         display: inline-table;
@@ -531,9 +531,10 @@
       border-radius: @border-radius-md !important;
       -webkit-box-shadow: none;
       box-shadow: none;
-      font-size: @fontsize-md;
+      font-size: @fontsize-mdplus;
       background-color: transparent;
       border-color: transparent;
+
     }
     .input-group-btn {
       display: block;
@@ -555,15 +556,15 @@
       padding: 0.2em 1em 0 0;
       font-size: 18px;
       border-radius: 0;
-      /*color:#fff;*/
       background-color: transparent;
-      border: 1px solid transparent;
+      border: 0;
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
     }
     .btn:active,
     .btn:focus,
     &.open .btn {
+      padding: 0.5em 0;
       color: #777;
       background-color: #fff;
       border: 0;
@@ -572,11 +573,14 @@
       outline: none;
       outline: 0px auto -webkit-focus-ring-color;
       outline-offset: 0;
+      font-size: 22px;
     }
     &.open .input-group {
-      width: 100%;
+      font-size: 1em;
+      width: 400px;
       -webkit-transition: width 0.3s ease-in-out;
       transition: width 0.3s ease-in-out;
+      box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     }
   }
 
@@ -746,6 +750,9 @@
         position: relative;
         top: 0;
         left: 0;
+        .search-form {
+          width: 100%;
+        }
       }
 
       .close-collapsenavbar {
