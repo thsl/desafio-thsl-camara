@@ -19,6 +19,33 @@
     font-size: @fontsize-mdplus;
     padding: 0.5em;
   }
+  .submenu-secondlevel {
+    display: none;
+    top: 1.3em;
+    left: -4em !important;
+    width: 85%;
+    position: fixed;
+    margin-top: 0;
+    margin-left: 10.88em;
+    border: 0;
+    box-shadow: none;
+    @media (max-width: @screen-sm) {
+      margin-left: 0px;
+      position: relative;
+    }
+    &::after {
+      border-color: rgba(255, 255, 255, 0) !important;
+      border-right-color: #ffffff !important;
+      border-width: 10px !important;
+      left: -18px !important;
+      bottom: 10px !important;
+      margin-left: 0 !important;
+    }
+    li{
+      padding: 0.25em;
+    }
+  }
+
   .menu-item {
     font-weight: 700;
     width: 16.666%;
@@ -140,6 +167,13 @@
   .nav, .collapse, .dropup, .dropdown {
     position: static;
   }
+
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+
   // propagate menu position under container for fw navbars
   .container {
     position: relative;
@@ -271,7 +305,7 @@
         border-color: rgba(255, 255, 255, 0);
         border-bottom-color: #ffffff;
         border-width: 10px;
-        left: 5em;
+        left: 4.5em;
         margin-left: 0;
         @media (max-width: @screen-sm) {
           display: none;
@@ -350,6 +384,7 @@
         position: relative;
       }
     }
+
     .dropdown-submenu {
       .dropdown-menu {
         display: none;
@@ -747,6 +782,17 @@
       .nav-top {
         margin: 3em 0 0 0;
         padding: 0;
+      }
+      .submenu-secondlevel {
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: inherit;
+        margin-top: 0;
+        margin-left: 1em;
+        border: 0;
+        box-shadow: none;
       }
     }
   }

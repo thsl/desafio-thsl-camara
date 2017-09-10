@@ -1,49 +1,23 @@
-// mega-menu funcionar
-/*$(document).on('click', '.navbar-theme .dropdown-menu', function (e) {
+// menu superior
+
+$(document).on('click', '.navbar-theme .dropdown-menu', function (e) {
     e.stopPropagation()
 });
 
-
-$(document).ready(function () {
-        $('.dropdown-toggle').dropdown();
-    });
-
- / Permite manipular a cor do svg via css
-$(function(){
-    jQuery('img.svg').each(function(){
-        var $img = jQuery(this);
-        var imgID = $img.attr('id');
-        var imgClass = $img.attr('class');
-        var imgURL = $img.attr('src');
-
-        jQuery.get(imgURL, function(data) {
-            // Get the SVG tag, ignore the rest
-            var $svg = jQuery(data).find('svg');
-
-            // Add replaced image's ID to the new SVG
-            if(typeof imgID !== 'undefined') {
-                $svg = $svg.attr('id', imgID);
-            }
-            // Add replaced image's classes to the new SVG
-            if(typeof imgClass !== 'undefined') {
-                $svg = $svg.attr('class', imgClass+' replaced-svg');
-            }
-
-            // Remove any invalid XML tags as per http://validator.w3.org
-            $svg = $svg.removeAttr('xmlns:a');
-
-            // Check if the viewport is set, else we gonna set it if we can.
-            if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-                $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-            }
-
-            // Replace image with new SVG
-            $img.replaceWith($svg);
-
-        }, 'xml');
-
-    });
+$('.barra-abre-navbar').on('click', function () {
+    $('.navbar-collapse').collapse('hide');
 });
+$(".barra-abre-navbar").click(function () {
+    $("body").toggleClass("nav-open")
+});
+// faz o bloqueio do body quando o menu esta aberto
+
+$(".fechanavbr").click(function () {
+    $("body").toggleClass("nav-open")
+});
+
+
+
 
 
 
@@ -59,22 +33,10 @@ $(function(){
 })(jQuery);
 
 
-$(document).ready(function() {
-    $(".carousel-inner").swiperight(function() {
-        $(this).parent().carousel('prev');
-    });
-    $(".carousel-inner").swipeleft(function() {
-        $(this).parent().carousel('next');
-    });
-});
 
-*/
 
-// menu superior
 
-$(document).on('click', '.navbar-theme .dropdown-menu', function (e) {
-    e.stopPropagation()
-});
+
 
 // carrossel
 $(function () {
@@ -89,14 +51,6 @@ $(function () {
 });
 
 
-// faz o bloqueio do body quando o menu esta aberto
-
-$(".fechanavbr").click(function () {
-    $("body").toggleClass("nav-open")
-});
-$(".barra-abre-navbar").click(function () {
-    $("body").toggleClass("nav-open")
-});
 
 // popovers
 $(function () {
@@ -223,7 +177,4 @@ if (typeof jQuery === "undefined") {
 }(jQuery);
 
 
-$('.barra-abre-navbar').on('click', function () {
-    $('.navbar-collapse').collapse('hide');
-});
 

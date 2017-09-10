@@ -596,15 +596,15 @@ input[type=checkbox], input[type=radio] {
 // pesos
 
 .font-thin {
-  font-weight: 100;
+  font-weight: 100 !important;;
 }
 
 .font-regular {
-  font-weight: normal;
+  font-weight: normal !important;;
 }
 
 .font-bold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 // links
@@ -768,10 +768,10 @@ input[type=checkbox], input[type=radio] {
 }
 
 .clip-top-right-sm {
-  clip-path: polygon(0% 0%, 100% calc(10%), 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% calc(10% - 5vw), 100% 100%, 0% 100%);
 }
 .clip-top-left-sm {
-  clip-path: polygon(0% calc(10%), 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0% calc(10% - 5vw), 100% 0, 100% 100%, 0% 100%);
 }
 
 .grafico-md {

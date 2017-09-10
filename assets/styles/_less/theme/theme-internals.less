@@ -79,9 +79,14 @@
     background-repeat: no-repeat;
     padding: 1em 0;
     .dropdown-menu {
+      width: 600px;
       li {
         padding: 0.5em 0;
         white-space: nowrap;
+      }
+      @media (max-width: @screen-sm) {
+        width: 200px;
+        left: 0;
       }
     }
   }
