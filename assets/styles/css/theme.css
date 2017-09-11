@@ -826,6 +826,9 @@ input[type=radio] {
     display: none !important;
   }
 }
+.search-mark {
+  background-color: #ffcf82;
+}
 .mt-0 {
   margin-top: 0;
 }
@@ -2601,7 +2604,9 @@ input[type=radio] {
 .form-control,
 input,
 select,
-textarea {
+textarea,
+checkbox,
+.checkbox {
   font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1em;
 }
