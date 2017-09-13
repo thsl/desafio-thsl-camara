@@ -709,7 +709,7 @@ input[type=radio] {
   height: auto;
 }
 /* Cores genéricas, para textos */
-.back-default {
+.back-dark {
   background-color: #333;
 }
 .back-white {
@@ -2774,6 +2774,56 @@ button {
   border-color: #cb311e;
   color: #cb311e;
   box-shadow: none;
+}
+#content-sidebar {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+#content-sidebar #sidebar-wrapper {
+  margin-left: -250px;
+  top: 51px;
+  left: 250px;
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+#content-sidebar.active {
+  padding-left: 0;
+}
+#content-sidebar.active #sidebar-wrapper {
+  left: 0;
+}
+#content-sidebar #page-content-wrapper {
+  width: 100%;
+  padding-top: 70px;
+  transition: all 0.4s ease 0s;
+}
+#content-sidebar .sidebar-nav {
+  width: 250px;
+  list-style: none;
+}
+@media (max-width: 767px) {
+  #content-sidebar {
+    padding-left: 0;
+  }
+  #content-sidebar #sidebar-wrapper {
+    left: 0;
+  }
+  #content-sidebar.active {
+    position: relative;
+    left: 250px;
+  }
+  #content-sidebar.active #sidebar-wrapper {
+    left: 250px;
+    width: 250px;
+    transition: all 0.4s ease 0s;
+  }
+  #content-sidebar #menu-toggle {
+    display: inline-block;
+  }
 }
 .dest-one .dest-a {
   color: #333;
