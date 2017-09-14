@@ -194,9 +194,4 @@ $(window).on('popstate', function () {
 });
 
 
-
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#content-sidebar").toggleClass("active");
-});
-
+// side bar

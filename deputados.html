@@ -15,6 +15,9 @@
     <link href="assets/styles/css/animate.min.css" rel="stylesheet">
     <link href="assets/styles/css/themify-icons.css" rel="stylesheet">
     <link href="assets/styles/css/theme.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 <!-- início da navegação principal -->
@@ -290,54 +293,559 @@
 
 <!-- wrapper -->
 <div class="wrapper">
-    
-    <div id="content-sidebar">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <div class="form-group mt-xl">
-                <input type="text" class="form-control" id="filter_input" aria-describedby="filter_input" placeholder="Filtrar Deputados">
+    <header>
+        <div class="header-macrotema back-light-gray">
+            <div class="container">
+                <div class="bck-macrotema" style="background-image: url('assets/img/estrutura/bck-senado.png')">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h1>Conheça os deputados</h1>
+                        </div>
+                        <div class="col-sm-4 text-right">
+                            <!-- Single button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-link text-blue text-uppercase dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Conheça mais sobre os deputados <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right text-blue font-second" aria-labelledby="dLabel">
+                                    <li>
+                                        <a href="#">Lideranças partidárias</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bancadas</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Suplentes em Exercício</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Deputados Federais – 55ª Legislatura (com fotos)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Histórico de movimentação parlamentar</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Informações eleitorais</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Downloads</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">LISTA COMPLETA: informações e contatos dos Deputados</a>
+                                    </li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
             </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                <div class="todos-deputados">
+                    <div class="filtro-deputados">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>
+                                    <small class="font-second">Filtre por nome, estado ou partido:</small>
+                                </label>
+                                <input id="filter_input" type="text" class="form-control" placeholder="Fitrar deputados">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="lista-deputados" id="lista-deputados">
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ABEL MESQUITA JR.</strong><br>
+                                            <small class="text-gray">Pará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADAIL CARNEIRO</strong><br>
+                                            <small class="text-gray">Ceará - PR</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-008.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADELMO CARNEIRO LEÃO</strong><br>
+                                            <small class="text-gray">Paraíba - PT</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-009.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADEMIR CAMILO</strong><br>
+                                            <small class="text-gray">Roraima - PMDB</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADEMIR CAMILO</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ABEL MESQUITA JR.</strong><br>
+                                            <small class="text-gray">Distrito Federal - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADAIL CARNEIRO</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-008.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADELMO CARNEIRO LEÃO</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-009.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADEMIR CAMILO</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADEMIR CAMILO</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ABEL MESQUITA JR.</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADAIL CARNEIRO</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-008.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADELMO CARNEIRO LEÃO</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-009.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADEMIR CAMILO</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADEMIR CAMILO</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ABEL MESQUITA JR.</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADAIL CARNEIRO</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-008.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADELMO CARNEIRO LEÃO</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-009.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADEMIR CAMILO</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lista-deputados-item">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="rouded-image-xs center-block">
+                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <a href="javascript:void(0);">
+                                        <p>
+                                            <strong>ADEMIR CAMILO</strong><br>
+                                            <small class="text-gray">Ceará - DEM</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--/span-->
+            <div class="col-xs-12 col-sm-9 content">
+                <div class="row mt-lg divider-bottom">
+                    <div class="col-sm-3">
+                        <div class="rouded-image-md center-block">
+                            <a href="#"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        
+                        <div class="row">
+                            <div class="col-xs-12"><label class="text-gray">Nome civil:</label>
+                                <h4>ABEL SALVADOR MESQUITA JUNIOR</h4></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4"><label class="text-gray mt-md">Aniversário:</label>
+                                <p>29 / 3</p>
+                            </div>
+                            <div class="col-xs-4"><label class="text-gray mt-md">Partido/UF:</label>
+                                <p>DEM / RR / Titular</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <img class="img-adaptative" width="80" src="assets/img/logos/dem-logo.png">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"><label class="text-gray mt-md">Telefone:</label>
+                                <p>(61) 3215-5248 <br> Fax: 3215-2248</p>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="text-gray mt-md">Legislaturas:</label>
+                                <p>15/19</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-lg">
+                    <div class="col-sm-8">
+                        <canvas id="grafico-um"></canvas>
+                    </div>
+                    <div class="col-sm-4">
+                        <canvas id="grafico-dois"></canvas>
+                    </div>
+                </div>
+                
+                
+                <div class="row mt-lg">
+                    <div class="col-xs-12">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Projetos de sua autoria
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body fontsize-sm">
+                                        <ul class="list-unstyled">
+                                            <li class="divider-bottom">
+                                                <p>
+                                                    <small class="fontsize-sm">17/08/2017 - 10:54h</small>
+                                                </p>
+                                                <h5>Necessidade de apoio do Governo Federal ao Estado de Roraima diante do crescente fluxo de migrantes venezuelanos. Prejuízos causados à economia roraimense pela precariedade do sistema de energia elétrica.</h5>
+                                                <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
+                                            </li>
+                                            <li class="divider-bottom">
+                                                <p>
+                                                    <small class="fontsize-sm">17/08/2017 - 10:54h</small>
+                                                </p>
+                                                <h5>Votação nominal do parecer da Comissão de Constituição e Justiça e de Cidadania, pelo indeferimento da Solicitação para a Instauração do Processo nº 1, de 2017, a respeito de denúncia do Ministério Público Federal contra o Presidente Michel Temer.</h5>
+                                                <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Projetos relatados
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body fontsize-sm">
+                                        <ul class="list-unstyled">
+                                            <li class="divider-bottom">
+                                                <p>
+                                                    <small class="fontsize-sm">17/08/2017 - 10:54h</small>
+                                                </p>
+                                                <h5>Necessidade de apoio do Governo Federal ao Estado de Roraima diante do crescente fluxo de migrantes venezuelanos. Prejuízos causados à economia roraimense pela precariedade do sistema de energia elétrica.</h5>
+                                                <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
+                                            </li>
+                                            <li class="divider-bottom">
+                                                <p>
+                                                    <small class="fontsize-sm">17/08/2017 - 10:54h</small>
+                                                </p>
+                                                <h5>Votação nominal do parecer da Comissão de Constituição e Justiça e de Cidadania, pelo indeferimento da Solicitação para a Instauração do Processo nº 1, de 2017, a respeito de denúncia do Ministério Público Federal contra o Presidente Michel Temer.</h5>
+                                                <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Discursos em plenário
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body fontsize-sm">
+                                        <ul class="list-unstyled">
+                                            <li class="divider-bottom">
+                                                <p>
+                                                    <small class="fontsize-sm">17/08/2017 - 10:54h</small>
+                                                </p>
+                                                <h5>Necessidade de apoio do Governo Federal ao Estado de Roraima diante do crescente fluxo de migrantes venezuelanos. Prejuízos causados à economia roraimense pela precariedade do sistema de energia elétrica.</h5>
+                                                <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
+                                            </li>
+                                            <li class="divider-bottom">
+                                                <p>
+                                                    <small class="fontsize-sm">17/08/2017 - 10:54h</small>
+                                                </p>
+                                                <h5>Votação nominal do parecer da Comissão de Constituição e Justiça e de Cidadania, pelo indeferimento da Solicitação para a Instauração do Processo nº 1, de 2017, a respeito de denúncia do Ministério Público Federal contra o Presidente Michel Temer.</h5>
+                                                <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             
-            <ul id="filter_list" class="sidebar-nav nav">
-                <li class="sidebar-brand">
-                    <a href="#home"><span class="fa fa-home solo">Home</span></a>
-                </li>
-                <li>
-                    <a href="#anch1">
-                        <span class="fa fa-anchor solo">Anchor 1</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#anch2">
-                        <span class="fa fa-anchor solo">Anchor 2</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#anch3">
-                        <span class="fa fa-anchor solo">Anchor 3</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#anch4">
-                        <span class="fa fa-anchor solo">Anchor 4</span>
-                    </a>
-                </li>
-            </ul>
-        
-        </div>
-        <!-- /Sidebar -->
-        
-        <!-- Conteudo da página -->
-        <div id="page-content-wrapper">
-            <a id="menu-toggle" href="#" class="toggle">
-                Trocar deputado
-            </a>
-        </div>
-        <!-- /Conteudo da página -->
-    </div>
-    <!-- /.content-sidebar -->
-
-
+            
+            </div>
+        </div><!-- ./row-offcanvas-left -->
+    </div><!-- ./container-fluid -->
 </div>
 <!-- ./wrapper -->
 
@@ -558,9 +1066,7 @@
         </div>
         <div class="col-xs-4">
             <div class="barra-content">
-                <a href="javascript:void(0)" class="btn-barra">
-                    <span class="ti-sharethis"></span>
-                </a>
+                <button type="button" class="btn-barra btn-troca-deputados" data-toggle="offcanvas">Selecione o deputado</button>
             </div>
         </div>
     
@@ -576,12 +1082,13 @@
 <script src="assets/js/tether.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/theme.js"></script>
+<script src="assets/js/sidebar.js"></script>
 
-<!--<script src="assets/js/transparencia-util.js"></script>
-<script src="assets/js/transparencia.js"></script>-->
+<script src="assets/js/transparencia-util.js"></script>
+<script src="assets/js/deputados.js"></script>
 <script src="assets/js/jquery.fastLiveFilter.js"></script>
 <script>
-    $('#filter_input').fastLiveFilter('#filter_list');
+    $('#filter_input').fastLiveFilter('#lista-deputados');
 </script>
 
 </body>
