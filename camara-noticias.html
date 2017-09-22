@@ -21,6 +21,8 @@
 </head>
 <body>
 <!-- início da navegação principal -->
+<!-- início da navegação principal -->
+<!-- início da navegação principal -->
 <a href="#conteudo" class="hidden">Ir para o conteúdo</a>
 <nav class="navbar navbar-theme white-theme navbar-default navbar-fixed-top">
     <div class="container">
@@ -75,15 +77,15 @@
                     </div>
                 </div>
             </div>
-            
-            <ul class="nav navbar-nav navigation-theme">
+            <!-- Tornar hover de novo: <ul class="nav navbar-nav navigation-theme" data-hover="dropdown" data-animations="none">-->
+            <ul class="nav navbar-nav navigation-theme" data-hover="dropdown" data-animations="none">
                 <li class="dropdown menu-item">
-                    <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">Notícias</a>
+                    <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Notícias</a>
                     <ul class="dropdown-menu">
                         <li>
                             <div class="navbar-theme-content">
                                 <div class="row">
-                                    <ul class="col-sm-2 theme-submenu">
+                                    <ul class="col-sm-3 theme-submenu">
                                         <li><strong class="title-nolink">Temas</strong></li>
                                         <li>
                                             <a href="camara-noticias.html" class="font-bold text-green">Câmara Notícias</a>
@@ -154,7 +156,7 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                    <ul class="col-sm-2 theme-submenu">
+                                    <ul class="col-sm-3 theme-submenu">
                                         <li><strong class="title-nolink">TV Câmara</strong></li>
                                         <li><a href="javascript:void(0)">Comissões ao vivo</a></li>
                                         <li><a href="javascript:void(0)">Como sintonizar</a></li>
@@ -163,14 +165,14 @@
                                         <li><a href="javascript:void(0)"><strong>Confira todos</strong></a></li>
                                     
                                     </ul>
-                                    <ul class="col-sm-2 theme-submenu">
+                                    <ul class="col-sm-3 theme-submenu">
                                         <li><strong class="title-nolink">Rádio Câmara</strong></li>
                                         <li><a href="javascript:void(0)">Como sintonizar</a></li>
                                         <li><a href="javascript:void(0)">Programação semanal</a></li>
                                         <li><a href="javascript:void(0)">Conheça a rádio</a></li>
                                     
                                     </ul>
-                                    <ul class="col-sm-2 theme-submenu">
+                                    <ul class="col-sm-3 theme-submenu">
                                         <li><strong class="title-nolink">Mais</strong></li>
                                         <li><a href="javascript:void(0)">Assessoria de Imprensa</a></li>
                                         <li><a href="javascript:void(0)">Banco de Imagens</a></li>
@@ -184,16 +186,14 @@
                     </ul>
                 </li>
                 <li class="dropdown menu-item">
-                    <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">Conheça</a>
+                    <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Conheça</a>
                     <ul class="dropdown-menu">
                         <li>
                             <div class="navbar-theme-content">
                                 <div class="row">
                                     <ul class="col-sm-6 theme-submenu">
                                         <li><strong class="title-nolink">A nossa casa</strong></li>
-                                        <li><a href="javascript:void(0)">
-                                            <img class="img-adaptative img-rounded mb-sm" width="145" title="Foto da contrução da câmara" src="assets/img/fotos/construcao-001.JPG"><br>História da Câmara</a>
-                                        </li>
+                                        <li><a href="javascript:void(0)">História da Câmara</a></li>
                                         <li><a href="javascript:void(0)">O papel da Câmara</a></li>
                                         <li><a href="javascript:void(0)">Visite a Câmara</a></li>
                                         <li><a href="javascript:void(0)">Institucional</a></li>
@@ -213,7 +213,7 @@
                     </ul>
                 </li>
                 <li class="dropdown menu-item">
-                    <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">Transparência</a>
+                    <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Transparência</a>
                     <ul class="dropdown-menu">
                         <li>
                             <div class="navbar-theme-content">
@@ -242,7 +242,7 @@
                     </ul>
                 </li>
                 <li class="dropdown menu-item">
-                    <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">Legislação</a>
+                    <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Legislação</a>
                     <ul class="dropdown-menu">
                         <li>
                             <div class="navbar-theme-content">
@@ -265,7 +265,7 @@
                     </ul>
                 </li>
                 <li class="dropdown menu-item">
-                    <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">Agenda</a>
+                    <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Agenda</a>
                     <ul class="dropdown-menu">
                         <li>
                             <div class="navbar-theme-content">
@@ -283,7 +283,7 @@
                     </ul>
                 </li>
                 
-                <li class="menu-item"><a href="participe.html">Participe!</a></li>
+                <li class="menu-item"><a href="participe.html" class="menu-item-principal">Participe!</a></li>
             </ul>
         </div>
     </div>
@@ -1411,6 +1411,7 @@
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/tether.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-dropdownhover.min.js"></script>
 <script src="assets/js/theme.js"></script>
 </body>
 

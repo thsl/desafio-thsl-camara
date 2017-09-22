@@ -4,6 +4,7 @@ $(document).on('click', '.navbar-theme .dropdown-menu', function (e) {
     e.stopPropagation()
 });
 
+
 $('.barra-abre-navbar').on('click', function () {
     $('.navbar-collapse').collapse('hide');
 });

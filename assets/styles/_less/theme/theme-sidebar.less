@@ -3,16 +3,16 @@
   padding: 1em 1.5em;
   background-color: @white;
   &::-webkit-scrollbar-track {
-    background-color: @gray;
+    background-color: @white;
   }
 
   &::-webkit-scrollbar {
     width: 3px;
-    background-color: @blue;
+    background-color: @gray;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: @blue;
+    background-color: @gray;
   }
   -webkit-box-shadow: 10px 0px 5px -3px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 10px 0px 5px -3px rgba(0, 0, 0, 0.15);
@@ -27,6 +27,7 @@
     transition: all .25s ease-out;
     .content {
       width: 75%;
+      padding-left: 3em;
       -webkit-transition: all .25s ease-out;
       -moz-transition: all .25s ease-out;
       transition: all .25s ease-out;
