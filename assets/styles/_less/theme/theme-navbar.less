@@ -16,7 +16,7 @@
     }
   }
   .icon-top {
-    font-size: @fontsize-mdplus;
+    //font-size: @fontsize-mdplus;
     padding: 0.5em 0.5em 0 0;
   }
   .submenu-secondlevel {
@@ -64,7 +64,7 @@
       //font-family: @first-fontfamily;
       font-size: @fontsize-mdplus;
       font-weight: 400;
-      color: @green-one;
+      color: @text-color;
     }
   }
   .navbar-header {
@@ -203,7 +203,8 @@
   }
   //tema Branco
   &.white-theme {
-    background-image: linear-gradient(-180deg, #DFE1E2 0%, #FFFFFF 100%);
+    //background-image: linear-gradient(-180deg, #DFE1E2 0%, #FFFFFF 100%);
+    background-image: @white;
     .shadown-md();
     .link-congresso {
       svg path {
@@ -225,7 +226,7 @@
   }
 
   .navigation-theme {
-    &:before {
+    /*&:before {
       content: '';
       width: 100%;
       position: absolute;
@@ -236,7 +237,7 @@
       @media (max-width: @screen-sm-max) {
         display: none;
       }
-    }
+    }*/
     margin-top: 1em;
     width: 100%;
     & > li > a {
@@ -252,8 +253,8 @@
       //padding-bottom: 0.5em;
     }
     & > .open > a, & > .open > a:focus, & > .open > a:hover {
-      color: @white;
-      background-color: @light-green;
+      color: @light-green-two;
+      background-color: transparent;
       //font-size: @fontsize-mdplus;
       //border-bottom: 2px solid #005689;
     }
@@ -323,7 +324,7 @@
         pointer-events: none;
       }
 
-      /*&::after {
+      &::after {
         border-color: rgba(255, 255, 255, 0);
         border-bottom-color: #ffffff;
         border-width: 10px;
@@ -342,12 +343,12 @@
         @media (max-width: @screen-sm) {
           display: none;
         }
-      }*/
+      }
     }
     .open > .dropdown-menu {
       -webkit-transform: scale(1, 1);
       transform: scale(1, 1);
-      margin: 0;
+      margin: 4px 0 0 0;
       display: block !important;
       @media (max-width: @screen-sm) {
         margin-top: 0;
@@ -543,14 +544,14 @@
       transition: all 0.2s ease-in-out;
       background: #FFFFFF;
       border: 1px solid #C2C2C2;
-      border-radius: @border-radius-md;
+      border-radius: 0;
     }
     .form-control,
     .form-control:focus {
       font-weight: normal;
       //height: 1.5em;
       padding: 0 32px 0 12px;
-      border-radius: @border-radius-md !important;
+      border-radius: 0 !important;
       -webkit-box-shadow: none;
       box-shadow: none;
       font-size: @fontsize-mdplus;

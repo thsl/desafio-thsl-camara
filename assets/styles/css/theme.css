@@ -1540,7 +1540,7 @@ input[type=radio] {
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
-  padding: 1em 0;
+  padding: 1.5em 0 1em 0;
 }
 .header-macrotema .bck-macrotema .dropdown-menu {
   width: 600px;
@@ -1692,7 +1692,6 @@ input[type=radio] {
   color: #1383C4;
 }
 .navbar-theme .icon-top {
-  font-size: 1.25em;
   padding: 0.5em 0.5em 0 0;
 }
 .navbar-theme .submenu-secondlevel {
@@ -1741,7 +1740,7 @@ input[type=radio] {
 .navbar-theme .menu-item .menu-item-principal {
   font-size: 1.25em;
   font-weight: 400;
-  color: #0C5E3D;
+  color: #333;
 }
 .navbar-theme .navbar-header {
   float: none;
@@ -1895,7 +1894,7 @@ input[type=radio] {
   right: 0;
 }
 .navbar-theme.white-theme {
-  background-image: linear-gradient(-180deg, #DFE1E2 0%, #FFFFFF 100%);
+  background-image: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .navbar-theme.white-theme .link-congresso svg path {
@@ -1909,22 +1908,20 @@ input[type=radio] {
   border: 0;
 }
 .navbar-theme .navigation-theme {
+  /*&:before {
+      content: '';
+      width: 100%;
+      position: absolute;
+      bottom: 3em;
+      height: 1px;
+      background: #333;
+      background: -webkit-linear-gradient(left, rgba(158, 158, 158, 0) 0%, rgba(158, 158, 158, 0.75) 50%, rgba(158, 158, 158, 0) 100%);
+      @media (max-width: @screen-sm-max) {
+        display: none;
+      }
+    }*/
   margin-top: 1em;
   width: 100%;
-}
-.navbar-theme .navigation-theme:before {
-  content: '';
-  width: 100%;
-  position: absolute;
-  bottom: 3em;
-  height: 1px;
-  background: #333;
-  background: -webkit-linear-gradient(left, rgba(158, 158, 158, 0) 0%, rgba(158, 158, 158, 0.75) 50%, rgba(158, 158, 158, 0) 100%);
-}
-@media (max-width: 991px) {
-  .navbar-theme .navigation-theme:before {
-    display: none;
-  }
 }
 .navbar-theme .navigation-theme > li > a {
   padding: 0.5em;
@@ -1938,8 +1935,8 @@ input[type=radio] {
 .navbar-theme .navigation-theme > .open > a,
 .navbar-theme .navigation-theme > .open > a:focus,
 .navbar-theme .navigation-theme > .open > a:hover {
-  color: #fff;
-  background-color: #50B748;
+  color: #229D59;
+  background-color: transparent;
 }
 .navbar-theme .navigation-theme .theme-submenu {
   color: #818181;
@@ -1991,26 +1988,6 @@ input[type=radio] {
   border: 0;
   border-top: 4px solid #50B748;
   border-bottom: 4px solid #50B748;
-  /*&::after {
-        border-color: rgba(255, 255, 255, 0);
-        border-bottom-color: #ffffff;
-        border-width: 10px;
-        left: 4.5em;
-        margin-left: 0;
-        @media (max-width: @screen-sm) {
-          display: none;
-        }
-      }
-      &::before {
-        border-color: rgba(255, 255, 255, 0);
-        border-bottom-color: transparent;
-        border-width: 20px;
-        left: 50px;
-        margin-left: -20px;
-        @media (max-width: @screen-sm) {
-          display: none;
-        }
-      }*/
 }
 .navbar-theme .navigation-theme .dropdown-menu::after,
 .navbar-theme .navigation-theme .dropdown-menu::before {
@@ -2022,10 +1999,34 @@ input[type=radio] {
   position: absolute;
   pointer-events: none;
 }
+.navbar-theme .navigation-theme .dropdown-menu::after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 10px;
+  left: 4.5em;
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  .navbar-theme .navigation-theme .dropdown-menu::after {
+    display: none;
+  }
+}
+.navbar-theme .navigation-theme .dropdown-menu::before {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: transparent;
+  border-width: 20px;
+  left: 50px;
+  margin-left: -20px;
+}
+@media (max-width: 768px) {
+  .navbar-theme .navigation-theme .dropdown-menu::before {
+    display: none;
+  }
+}
 .navbar-theme .navigation-theme .open > .dropdown-menu {
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
-  margin: 0;
+  margin: 4px 0 0 0;
   display: block !important;
 }
 @media (max-width: 768px) {
@@ -2200,13 +2201,13 @@ input[type=radio] {
   transition: all 0.2s ease-in-out;
   background: #FFFFFF;
   border: 1px solid #C2C2C2;
-  border-radius: 0.5em;
+  border-radius: 0;
 }
 .navbar-theme .search-form .form-control,
 .navbar-theme .search-form .form-control:focus {
   font-weight: normal;
   padding: 0 32px 0 12px;
-  border-radius: 0.5em !important;
+  border-radius: 0 !important;
   -webkit-box-shadow: none;
   box-shadow: none;
   font-size: 1.25em;
@@ -2598,7 +2599,7 @@ input[type=radio] {
 .panel-box-one {
   font-size: 80%;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  border-radius: 0.5em;
+  border-radius: 0;
 }
 .panel-box-one .panel-heading {
   padding: 1em 1em;
