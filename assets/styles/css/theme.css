@@ -1675,7 +1675,7 @@ input[type=radio] {
   position: relative;
   border: 0;
   margin-bottom: 0;
-  padding: 0.5em 0 0.5em 0;
+  padding: 0.5em 0 0 0;
   /*.dropdown:hover .dropdown-menu {
     display: block;
   }
@@ -1722,8 +1722,11 @@ input[type=radio] {
 .navbar-theme .submenu-secondlevel li {
   padding: 0.25em;
 }
+.navbar-theme .navigation-main {
+  background-color: #50B748;
+  margin: 1em 0 0 0;
+}
 .navbar-theme .menu-item {
-  width: 16.666%;
   text-align: center;
 }
 @media (max-width: 768px) {
@@ -1738,9 +1741,13 @@ input[type=radio] {
   border: 0;
 }
 .navbar-theme .menu-item .menu-item-principal {
-  font-size: 1.25em;
-  font-weight: 400;
-  color: #333;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0px 1px 1px #285f2a;
+}
+.navbar-theme .menu-item .menu-item-principal:hover {
+  color: #fff;
 }
 .navbar-theme .navbar-header {
   float: none;
@@ -1758,18 +1765,18 @@ input[type=radio] {
 .navbar-theme .logo-camara .logo,
 .navbar-theme .logo-camara .img-logo {
   margin: 0 auto 0 auto;
-  width: 20em;
+  width: 18em;
 }
 @media (max-width: 360px) {
   .navbar-theme .logo-camara .logo,
   .navbar-theme .logo-camara .img-logo {
-    width: 18em;
+    width: 16em;
   }
 }
 @media (max-width: 330px) {
   .navbar-theme .logo-camara .logo,
   .navbar-theme .logo-camara .img-logo {
-    width: 16em;
+    width: 15em;
   }
 }
 @media (max-width: 315px) {
@@ -1794,6 +1801,7 @@ input[type=radio] {
   margin-left: auto;
   margin-top: -2.3em;
   background-color: transparent;
+  position: relative;
 }
 .navbar-theme .nav-top:before,
 .navbar-theme .nav-top:after {
@@ -1920,23 +1928,25 @@ input[type=radio] {
         display: none;
       }
     }*/
-  margin-top: 1em;
+  margin: 0;
   width: 100%;
 }
 .navbar-theme .navigation-theme > li > a {
-  padding: 0.5em;
+  padding: 0.7em 1em 0.5em 1em;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid transparent;
   white-space: nowrap;
 }
-@media (max-width: 880px) {
-  .navbar-theme .navigation-theme > li > a {
-    padding: 0;
-  }
+.navbar-theme .navigation-theme > li > a:hover,
+.navbar-theme .navigation-theme > li > a:focus {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 .navbar-theme .navigation-theme > .open > a,
 .navbar-theme .navigation-theme > .open > a:focus,
 .navbar-theme .navigation-theme > .open > a:hover {
-  color: #229D59;
-  background-color: transparent;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid #fff;
 }
 .navbar-theme .navigation-theme .theme-submenu {
   color: #818181;
@@ -2000,10 +2010,12 @@ input[type=radio] {
   pointer-events: none;
 }
 .navbar-theme .navigation-theme .dropdown-menu::after {
-  border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: #ffffff;
-  border-width: 10px;
-  left: 4.5em;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #ffffff transparent transparent transparent;
+  left: 2.5em;
   margin-left: 0;
 }
 @media (max-width: 768px) {
@@ -2213,6 +2225,7 @@ input[type=radio] {
   font-size: 1.25em;
   background-color: transparent;
   border-color: transparent;
+  height: 45px;
 }
 .navbar-theme .search-form .input-group-btn {
   display: block;
@@ -2231,18 +2244,19 @@ input[type=radio] {
 }
 .navbar-theme .search-form .btn,
 .navbar-theme .search-form .btn:hover {
-  padding: 0 1em 0 0;
+  padding: 0.8em 1em 0 0;
   font-size: 18px;
   border-radius: 0;
   background-color: transparent;
   border: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  color: #fff;
 }
 .navbar-theme .search-form .btn:active,
 .navbar-theme .search-form .btn:focus,
 .navbar-theme .search-form.open .btn {
-  padding: 0.8em 0 0 0;
+  padding: 0.5em 0 0 0;
   color: #777;
   background-color: #fff;
   border: 0;
@@ -2254,11 +2268,11 @@ input[type=radio] {
   font-size: 22px;
 }
 .navbar-theme .search-form.open .input-group {
+  border: 0;
   font-size: 1em;
-  width: 400px;
+  width: 100%;
   -webkit-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 .navbar-theme :-ms-input-placeholder {
   color: #555 !important;
@@ -2359,6 +2373,12 @@ input[type=radio] {
     transition: transform 500ms ease;
     right: 0;
   }
+  .navbar-theme .navbar-collapse.collapse-right .navigation-main {
+    background-color: transparent;
+  }
+  .navbar-theme .navbar-collapse.collapse-right .navigation-main {
+    margin: 6em 0 0 0;
+  }
   .navbar-theme .navbar-collapse.collapse-right.collapse {
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -2382,20 +2402,28 @@ input[type=radio] {
     text-align: left;
     margin-bottom: 0;
     padding-bottom: 0;
+    color: #333;
+    text-shadow: none !important;
   }
   .navbar-theme .navbar-collapse.collapse-right .menu-item:first-child {
     border-top: 1px solid #e7e7e7 !important;
   }
   .navbar-theme .navbar-collapse.collapse-right .navigation-theme > li > a {
     padding: 1em;
+    color: #333;
+    text-shadow: none;
   }
   .navbar-theme .navbar-collapse.collapse-right .busca-desktop {
-    position: relative;
-    top: 0;
-    left: 0;
+    position: fixed;
+    top: 7em;
+    left: 1em;
   }
   .navbar-theme .navbar-collapse.collapse-right .busca-desktop .search-form {
     width: 100%;
+  }
+  .navbar-theme .navbar-collapse.collapse-right .busca-desktop .input-group-btn .btn-default {
+    color: #333;
+    padding: 0.7em 0;
   }
   .navbar-theme .navbar-collapse.collapse-right .close-collapsenavbar {
     display: block;
@@ -2404,6 +2432,7 @@ input[type=radio] {
     left: 0;
     padding: 1em;
     font-size: 1.563em;
+    z-index: 10;
   }
   .navbar-theme .navbar-collapse.collapse-right .links-items {
     padding-right: 1em;
@@ -2421,7 +2450,7 @@ input[type=radio] {
     margin-top: 0;
   }
   .navbar-theme .navbar-collapse.collapse-right .nav-top {
-    margin: 3em 0 0 0;
+    margin: 4em 0 0 0;
     padding: 0;
   }
   .navbar-theme .navbar-collapse.collapse-right .submenu-secondlevel {
