@@ -46,8 +46,8 @@
     }
   }
   .navigation-main {
-    background-color: @light-green;
-    margin: 1em 0 0 0;
+    background-color: rgba(0, 86, 137, 0.72);
+    margin: 1.5em 0 0 0;
   }
   .menu-item {
     //width: 16.666%;
@@ -65,12 +65,12 @@
       border: 0;
     }
     .menu-item-principal {
-      //font-family: @first-fontfamily;
-      font-size: 1.15em;
+      text-transform: uppercase;
+      font-size: .9em;
       font-weight: 700;
       color: #fff;
-      text-shadow: 0px 1px 1px rgb(40, 95, 42);
-      &:hover {
+      text-shadow: 0px 1px 1px rgba(19, 31, 50, 0.67);
+      &:hover, &:active, &:focus {
         color: @white;
       }
     }
@@ -80,15 +80,26 @@
   }
   // logos
   .logo-camara {
-    margin: 0.5em 0 0 1em;
+    //margin: 0.5em 0 0 1em;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -9em;
     text-align: center;
     background-color: transparent;
+    z-index: 3;
+    width: 18em;
+    @media (max-width: @screen-md) {
+      z-index: 0;
+      top: 1em;
+    }
     @media (max-width: @screen-sm) {
       text-align: left;
     }
-    .logo, .img-logo {
+    .logo{
       margin: 0 auto 0 auto;
       width: 18em;
+
       @media (max-width: 360px) {
         width: 16em;
       }
@@ -104,6 +115,7 @@
         margin-top: 0.25em;
       }
     }
+
   }
   .nav-top {
     width: 100%;
@@ -111,7 +123,7 @@
     padding-left: 0;
     margin-right: auto;
     margin-left: auto;
-    margin-top: -2.3em;
+    //margin-top: -2.3em;
     background-color: transparent;
     position: relative;
     .clearfix();
@@ -213,7 +225,8 @@
   //tema Branco
   &.white-theme {
     //background-image: linear-gradient(-180deg, #DFE1E2 0%, #FFFFFF 100%);
-    background-image: @white;
+    background: url("@{image-path-theme}/estrutura/bck-senado.png") no-repeat 76% top @white;
+    background-size: contain;
     .shadown-md();
     .link-congresso {
       svg path {
@@ -230,7 +243,7 @@
     }
   }
   .navbar-toggle {
-    margin-top: 1em;
+    margin-top: 0.5em;
     border: 0;
   }
 
@@ -250,8 +263,8 @@
     margin: 0;
     width: 100%;
     & > li > a {
-      padding: 0.7em 1em 0.5em 1em;
-      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 1em;
+      border-right: 1px solid rgba(77, 115, 179, 0.36);
       border-bottom: 2px solid transparent;
       white-space: nowrap;
       &:hover, &:focus {
@@ -381,7 +394,7 @@
   }
   .title-nolink {
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 700;
     color: #777;
   }
 
@@ -575,7 +588,7 @@
       font-size: @fontsize-mdplus;
       background-color: transparent;
       border-color: transparent;
-      height: 45px;
+      height: 51px;
     }
     .input-group-btn {
       display: block;
@@ -797,6 +810,7 @@
           padding: 1em;
           color: @text-color;
           text-shadow: none;
+          border-right: none;
         }
       }
 
@@ -807,8 +821,8 @@
         .search-form {
           width: 100%;
         }
-        .input-group-btn{
-          .btn-default{
+        .input-group-btn {
+          .btn-default {
             color: @text-color;
             padding: 0.7em 0;
           }
@@ -834,8 +848,9 @@
       }
 
       .dropdown-menu {
+        border-top: 0;
         margin: 0;
-        padding: 0;
+        padding: 0 0 2em 0;
       }
 
       .theme-submenu {
@@ -859,7 +874,7 @@
         width: 100%;
         position: inherit;
         margin-top: 0;
-        margin-left: 1em;
+        margin-left: 0.5em !important;
         border: 0;
         box-shadow: none;
       }

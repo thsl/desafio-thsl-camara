@@ -1,5 +1,4 @@
 // menu superior
-
 $(document).on('click', '.navbar-theme .dropdown-menu', function (e) {
     e.stopPropagation()
 });
@@ -19,6 +18,11 @@ $(".fechanavbr").click(function () {
 
 $('.theme-alert-close').click(function () {
     $('.theme-alert').hide();
+});
+$(window).load(function () {
+    setTimeout(function () {
+        $('.theme-alert').fadeIn()
+    }, 10000);
 });
 
 (function ($) {
@@ -95,8 +99,8 @@ if (typeof jQuery === "undefined") {
             $parent.find('input').trigger('focus');
 
             $parent
-                .toggleClass('open')
-                .trigger('shown.mr.searchbar', relatedTarget);
+            .toggleClass('open')
+            .trigger('shown.mr.searchbar', relatedTarget);
 
             return false;
         }
@@ -160,12 +164,12 @@ if (typeof jQuery === "undefined") {
     // ===================================
 
     $(document)
-        .on('click.mr.searchbar.data-api', clearMenus)
-        .on('click.mr.searchbar.data-api', '.searchbar', function (e) {
-            e.stopPropagation();
-        })
-        //.on('focus.mr.searchbar.data-api', toggle, Searchbar.prototype.toggle) // this causes the focus event to trigger twice
-        .on('click.mr.searchbar.data-api', toggle, Searchbar.prototype.toggle);
+    .on('click.mr.searchbar.data-api', clearMenus)
+    .on('click.mr.searchbar.data-api', '.searchbar', function (e) {
+        e.stopPropagation();
+    })
+    //.on('focus.mr.searchbar.data-api', toggle, Searchbar.prototype.toggle) // this causes the focus event to trigger twice
+    .on('click.mr.searchbar.data-api', toggle, Searchbar.prototype.toggle);
 
 
 }(jQuery);

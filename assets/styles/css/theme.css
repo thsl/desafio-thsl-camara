@@ -112,30 +112,6 @@ small,
   font-size: 0.8em;
 }
 @font-face {
-  font-family: 'sourcesans';
-  src: url('../../../assets/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'), url('../../../assets/fonts/sourcesanspro-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'sourcesans';
-  src: url('../../../assets/fonts/sourcesanspro-it-webfont.woff2') format('woff2'), url('../../../assets/fonts/sourcesanspro-it-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'sourcesans';
-  src: url('../../../assets/fonts/sourcesanspro-bold-webfont.woff2') format('woff2'), url('../../../assets/fonts/sourcesanspro-bold-webfont.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'sourcesans';
-  src: url('../../../assets/fonts/sourcesanspro-boldit-webfont.woff2') format('woff2'), url('../../../assets/fonts/sourcesanspro-boldit-webfont.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
   font-family: 'merriweather';
   src: url('../../../assets/fonts/merriweather-regular-webfont.woff2') format('woff2'), url('../../../assets/fonts/merriweather-regular-webfont.woff') format('woff');
   font-weight: normal;
@@ -184,6 +160,42 @@ small,
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'lato';
+  src: url('../../../assets/fonts/lato-bold-webfont.woff2') format('woff2'), url('../../../assets/fonts/lato-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lato';
+  src: url('../../../assets/fonts/lato-bolditalic-webfont.woff2') format('woff2'), url('../../../assets/fonts/lato-bolditalic-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'lato';
+  src: url('../../../assets/fonts/lato-light-webfont.woff2') format('woff2'), url('../../../assets/fonts/lato-light-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lato';
+  src: url('../../../assets/fonts/lato-lightitalic-webfont.woff2') format('woff2'), url('../../../assets/fonts/lato-lightitalic-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'lato';
+  src: url('../../../assets/fonts/lato-medium-webfont.woff2') format('woff2'), url('../../../assets/fonts/lato-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lato';
+  src: url('../../../assets/fonts/lato-mediumitalic-webfont.woff2') format('woff2'), url('../../../assets/fonts/lato-mediumitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
 .v-center {
   display: inline-block;
   vertical-align: middle;
@@ -207,7 +219,7 @@ small,
   font-family: "merriweather", "Times New Roman", Georgia, serif !important;
 }
 .font-second {
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 .font-second.h1,
 .font-second h1,
@@ -221,7 +233,7 @@ small,
 .font-second h5,
 .font-second.h6,
 .font-second h6 {
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 .font-third {
   font-family: "bosk", "comic sans", Helvetica, Arial, sans-serif !important;
@@ -1514,7 +1526,7 @@ input[type=radio] {
     padding: 1em 0 1em 0;
     text-align: center;
     font-size: 1.25em;
-    font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     color: #005689;
   }
   .barra-apoio .barra-content .btn-barra:hover {
@@ -1523,7 +1535,7 @@ input[type=radio] {
   }
 }
 .list-links {
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .list-links li {
   margin-bottom: 0.5em;
@@ -1580,7 +1592,7 @@ input[type=radio] {
   text-transform: uppercase;
   font-size: 0.8em;
   font-weight: 700;
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0.5em;
   margin: 0.5em;
   background: rgba(80, 183, 72, 0.22);
@@ -1599,7 +1611,7 @@ input[type=radio] {
   text-transform: uppercase;
   font-size: 0.8em;
   font-weight: 700;
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0 0 0.5em 0;
   margin: 0 0 0.5em 0;
   width: auto;
@@ -1617,7 +1629,7 @@ input[type=radio] {
   text-transform: uppercase;
   font-size: 0.8em;
   font-weight: 700;
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0 0 0.5em 0;
   margin: 0 0 0.5em 0;
   width: auto;
@@ -1632,7 +1644,11 @@ input[type=radio] {
 }
 .footer-global {
   font-size: 0.8em;
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.footer-global ul {
+  margin: 0;
+  padding: 0.5em;
 }
 .footer-global ul li {
   list-style-type: none;
@@ -1671,7 +1687,7 @@ input[type=radio] {
   color: #fff;
 }
 .navbar-theme {
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
   border: 0;
   margin-bottom: 0;
@@ -1723,8 +1739,8 @@ input[type=radio] {
   padding: 0.25em;
 }
 .navbar-theme .navigation-main {
-  background-color: #50B748;
-  margin: 1em 0 0 0;
+  background-color: rgba(0, 86, 137, 0.72);
+  margin: 1.5em 0 0 0;
 }
 .navbar-theme .menu-item {
   text-align: center;
@@ -1741,54 +1757,63 @@ input[type=radio] {
   border: 0;
 }
 .navbar-theme .menu-item .menu-item-principal {
-  font-size: 1.15em;
+  text-transform: uppercase;
+  font-size: .9em;
   font-weight: 700;
   color: #fff;
-  text-shadow: 0px 1px 1px #285f2a;
+  text-shadow: 0px 1px 1px rgba(19, 31, 50, 0.67);
 }
-.navbar-theme .menu-item .menu-item-principal:hover {
+.navbar-theme .menu-item .menu-item-principal:hover,
+.navbar-theme .menu-item .menu-item-principal:active,
+.navbar-theme .menu-item .menu-item-principal:focus {
   color: #fff;
 }
 .navbar-theme .navbar-header {
   float: none;
 }
 .navbar-theme .logo-camara {
-  margin: 0.5em 0 0 1em;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -9em;
   text-align: center;
   background-color: transparent;
+  z-index: 3;
+  width: 18em;
+}
+@media (max-width: 992px) {
+  .navbar-theme .logo-camara {
+    z-index: 0;
+    top: 1em;
+  }
 }
 @media (max-width: 768px) {
   .navbar-theme .logo-camara {
     text-align: left;
   }
 }
-.navbar-theme .logo-camara .logo,
-.navbar-theme .logo-camara .img-logo {
+.navbar-theme .logo-camara .logo {
   margin: 0 auto 0 auto;
   width: 18em;
 }
 @media (max-width: 360px) {
-  .navbar-theme .logo-camara .logo,
-  .navbar-theme .logo-camara .img-logo {
+  .navbar-theme .logo-camara .logo {
     width: 16em;
   }
 }
 @media (max-width: 330px) {
-  .navbar-theme .logo-camara .logo,
-  .navbar-theme .logo-camara .img-logo {
+  .navbar-theme .logo-camara .logo {
     width: 15em;
   }
 }
 @media (max-width: 315px) {
-  .navbar-theme .logo-camara .logo,
-  .navbar-theme .logo-camara .img-logo {
+  .navbar-theme .logo-camara .logo {
     width: 12em;
     margin-top: 0.25em;
   }
 }
 @media (max-width: 250px) {
-  .navbar-theme .logo-camara .logo,
-  .navbar-theme .logo-camara .img-logo {
+  .navbar-theme .logo-camara .logo {
     width: 8em;
     margin-top: 0.25em;
   }
@@ -1799,7 +1824,6 @@ input[type=radio] {
   padding-left: 0;
   margin-right: auto;
   margin-left: auto;
-  margin-top: -2.3em;
   background-color: transparent;
   position: relative;
 }
@@ -1902,7 +1926,8 @@ input[type=radio] {
   right: 0;
 }
 .navbar-theme.white-theme {
-  background-image: #fff;
+  background: url("../../img/estrutura/bck-senado.png") no-repeat 76% top #fff;
+  background-size: contain;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .navbar-theme.white-theme .link-congresso svg path {
@@ -1912,7 +1937,7 @@ input[type=radio] {
   fill: #000 !important;
 }
 .navbar-theme .navbar-toggle {
-  margin-top: 1em;
+  margin-top: 0.5em;
   border: 0;
 }
 .navbar-theme .navigation-theme {
@@ -1932,8 +1957,8 @@ input[type=radio] {
   width: 100%;
 }
 .navbar-theme .navigation-theme > li > a {
-  padding: 0.7em 1em 0.5em 1em;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1em;
+  border-right: 1px solid rgba(77, 115, 179, 0.36);
   border-bottom: 2px solid transparent;
   white-space: nowrap;
 }
@@ -2052,7 +2077,7 @@ input[type=radio] {
 }
 .navbar-theme .title-nolink {
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 700;
   color: #777;
 }
 .navbar-theme .nav-bar-custom .dropdown-menu {
@@ -2225,7 +2250,7 @@ input[type=radio] {
   font-size: 1.25em;
   background-color: transparent;
   border-color: transparent;
-  height: 45px;
+  height: 51px;
 }
 .navbar-theme .search-form .input-group-btn {
   display: block;
@@ -2412,6 +2437,7 @@ input[type=radio] {
     padding: 1em;
     color: #333;
     text-shadow: none;
+    border-right: none;
   }
   .navbar-theme .navbar-collapse.collapse-right .busca-desktop {
     position: fixed;
@@ -2438,8 +2464,9 @@ input[type=radio] {
     padding-right: 1em;
   }
   .navbar-theme .navbar-collapse.collapse-right .dropdown-menu {
+    border-top: 0;
     margin: 0;
-    padding: 0;
+    padding: 0 0 2em 0;
   }
   .navbar-theme .navbar-collapse.collapse-right .theme-submenu {
     margin: 1em 1em 0px 1.5em;
@@ -2460,7 +2487,7 @@ input[type=radio] {
     width: 100%;
     position: inherit;
     margin-top: 0;
-    margin-left: 1em;
+    margin-left: 0.5em !important;
     border: 0;
     box-shadow: none;
   }
@@ -2633,14 +2660,13 @@ input[type=radio] {
 .panel-box-one .panel-heading {
   padding: 1em 1em;
   border-bottom: 1px solid transparent;
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .panel-box-one .panel-footer {
   padding: 1em 1em;
   border-top: 1px solid transparent;
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
+  border-radius: 0;
 }
 .panel-box-one .panel-offsetcontent {
   margin: 0 -15px 1em -15px;
@@ -2651,10 +2677,10 @@ input[type=radio] {
   border-radius: 0;
 }
 .panel-group .panel-title {
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .custom-tabs .nav-tabs > li > a {
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 700;
@@ -2676,21 +2702,21 @@ select,
 textarea,
 checkbox,
 .checkbox {
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 1em;
 }
 .form-control {
   height: 3em;
 }
 .help-block {
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 label {
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .btn,
 button {
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0.70em 1em;
   font-weight: 700;
   border: 1px solid transparent;
@@ -2960,7 +2986,7 @@ button {
 }
 .todos-deputados {
   position: relative;
-  font-family: "sourcesans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 .todos-deputados .lista-deputados {
   margin: 1em 0;

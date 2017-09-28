@@ -132,7 +132,7 @@ window.chartColors = {
         return Math.round(Samples.utils.rand(-100, 100));
     };
     var options = {
-        defaultFontFamily: Chart.defaults.global.defaultFontFamily = "'sourcesans'"
+        defaultFontFamily: Chart.defaults.global.defaultFontFamily = "'lato'"
     }
 
 }(this));

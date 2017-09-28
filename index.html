@@ -16,9 +16,11 @@
     <link href="assets/styles/css/themify-icons.css" rel="stylesheet">
     <link href="assets/styles/css/bootstrap-dropdownhover.min.css" rel="stylesheet">
     <link href="assets/styles/css/theme.css" rel="stylesheet">
-    <!--[if lt IE 9]>
+    
+    <!--[if IE]>
     <script src="assets/js/html5shiv.min.js"></script>
     <![endif]-->
+    
 </head>
 <body>
 <!-- início da navegação principal -->
@@ -33,7 +35,7 @@
         <div class="logo-camara">
             <a href="javascript:void(0)" class="hidden"><h1>Câmara dos Deputados: Site oficial</h1></a>
             <a href="index.html" class="logo">
-                <img src="assets/img/logos/logo-camara-c-g.png" width="100%" height="auto" class="img-logo white-svg" title="Câmara dos deputados">
+                <img src="assets/img/logos/logo-camara.svg" width="100%" height="auto" class="img-logo white-svg" title="Câmara dos deputados">
             </a>
         </div>
     
@@ -59,9 +61,12 @@
                 </div>
                 <div class="links-ferramentas">
                     <ul class="links-items">
-                        <li title="fale conosco">
+                        <li>
                             <a href="javascript:void(0)" class="icon-top" data-toggle="tooltip" data-placement="bottom" title="Fale conosco">
                                 <span class="ti-email"></span><span class="hidden ml-sm">Fale conosco</span> </a></li>
+                        <li>
+                            <a href="javascript:void(0)" class="icon-top" data-toggle="tooltip" data-placement="bottom" title="Acessibilidade"><img src="assets/img/icones/vlibras.svg" width="20px" height="auto" title="Congresso nacional"></a>
+                        </li>
                     </ul>
                     
                 </div>
@@ -70,9 +75,9 @@
         <div class="navigation-main">
             <div class="container">
                 <!-- Tornar hover de novo: <ul class="nav navbar-nav navigation-theme" data-hover="dropdown" data-animations="none">-->
-                <ul class="nav navbar-nav navigation-theme">
+                <ul class="nav navbar-nav navigation-theme" data-hover="dropdown" data-animations="none">
                     <li class="dropdown menu-item">
-                        <a href="camara-noticias.html" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Notícias</a>
+                        <a href="javascript:void(0)"  data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Notícias</a>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="navbar-theme-content">
@@ -189,7 +194,7 @@
                         </ul>
                     </li>
                     <li class="dropdown menu-item">
-                        <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Conheça</a>
+                        <a href="javascript:void(0)"  data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Conheça</a>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="navbar-theme-content">
@@ -1312,7 +1317,7 @@
                                 <img src="assets/img/logos/logo-camara-bw.png" class="img-adaptative">
                             </div>
                             <div class="col-md-8">
-                                <p class="mt-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p class="mt-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
                     </div>
@@ -1557,14 +1562,6 @@
 <script src="assets/js/bootstrap-dropdownhover.min.js"></script>
 <script src="assets/js/theme.js"></script>
 
-
-<script>
-    $(window).load(function () {
-        setTimeout(function () {
-            $('.theme-alert').fadeIn()
-        }, 5000);
-    });
-</script>
 </body>
 
 </html>
