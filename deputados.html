@@ -1,1121 +1,1189 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="description" content="Cârama dos deputados do Brasil">
-    <meta name="keywords" content="Cârama dos deputados do Brasil">
-    <meta name="application-name" content="Cârama dos deputados do Brasil">
-    <meta name="author" content="Thiago - thslopes.com.br">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icones/favicon.png">
-    <title>Câmara dos Deputados</title>
-    <link href="assets/styles/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/styles/css/animate.min.css" rel="stylesheet">
-    <link href="assets/styles/css/themify-icons.css" rel="stylesheet">
-    <link href="assets/styles/css/theme.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-<!-- início da navegação principal -->
-<a href="#conteudo" class="hidden">Ir para o conteúdo</a>
-<nav class="navbar navbar-theme white-theme navbar-default navbar-fixed-top">
     
-    <div class="navbar-header">
-        <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle fechanavbr">
-            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-        </button>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="description" content="Cârama dos deputados do Brasil">
+        <meta name="keywords" content="Cârama dos deputados do Brasil">
+        <meta name="application-name" content="Cârama dos deputados do Brasil">
+        <meta name="author" content="Thiago - thslopes.com.br">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/icones/favicon.png">
+        <title>Câmara dos Deputados</title>
+        <link href="assets/styles/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/styles/css/animate.min.css" rel="stylesheet">
+        <link href="assets/styles/css/themify-icons.css" rel="stylesheet">
+        <link href="assets/styles/css/theme.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- início da navegação principal -->
+        <a href="#conteudo" class="hidden">Ir para o conteúdo</a>
+        <nav class="navbar navbar-theme white-theme navbar-default navbar-fixed-top">
         
-        <div class="logo-camara">
-            <a href="javascript:void(0)" class="hidden"><h1>Câmara dos Deputados: Site oficial</h1></a>
-            <a href="index.html" class="logo">
-                <img src="assets/img/logos/logo-camara.svg" width="100%" height="auto" class="img-logo white-svg" title="Câmara dos deputados">
-            </a>
-        </div>
-    
-    </div>
-    
-    <div id="navbar-collapse-1" class="navbar-collapse collapse collapse-right">
-        <a href="javascript:void(0)" class="close-collapsenavbar fechanavbr" data-toggle="collapse" data-target="#navbar-collapse-1"><span class="ti-close"></span></a>
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle fechanavbr">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+            
+                <div class="logo-camara">
+                    <a href="javascript:void(0)" class="hidden"><h1>Câmara dos Deputados: Site oficial</h1></a>
+                    <a href="index.html" class="logo">
+                        <img src="assets/img/logos/logo-camara.svg" width="100%" height="auto" class="img-logo white-svg" title="Câmara dos deputados">
+                    </a>
+                </div>
         
-        <div class="container">
-            <div class="nav-top clearfix">
-                <div class="links-externos">
-                    <ul class="links-items">
-                        <li>
-                            <a href="javascript:void(0)" class="icon-top" data-toggle="tooltip" data-placement="bottom" title="Site: Congresso Nacional"><img src="assets/img/icones/icones-home-congresso-black.svg" width="39px" height="auto" class="img-logo white-svg" title="Congresso nacional"></a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)" class="icon-top" data-toggle="tooltip" data-placement="bottom" title="Site: Senado"><img src="assets/img/icones/icones-home-senado-black.svg" width="16px" height="16px" class="img-logo white-svg" title="Senado nacional"></a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)" class="icon-top" data-toggle="tooltip" data-placement="bottom" title="Site: TCU"><img src="assets/img/icones/icones-home-tcu-black.svg" width="16px" height="16px" class="img-logo white-svg" title="TCU"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="links-ferramentas">
-                    <ul class="links-items">
-                        <li>
-                            <a href="javascript:void(0)" class="icon-top" data-toggle="tooltip" data-placement="bottom" title="Fale conosco">
-                                <span class="ti-email"></span><span class="hidden ml-sm">Fale conosco</span> </a></li>
-                        <li>
-                            <a href="javascript:void(0)" class="icon-top" data-toggle="tooltip" data-placement="bottom" title="Acessibilidade"><img src="assets/img/icones/vlibras.svg" width="20px" height="auto" title="Congresso nacional"></a>
-                        </li>
-                    </ul>
-                
-                </div>
             </div>
-        </div>
-        <div class="navigation-main">
-            <div class="container">
-                <!-- Tornar hover de novo: <ul class="nav navbar-nav navigation-theme" data-hover="dropdown" data-animations="none">-->
-                <ul class="nav navbar-nav navigation-theme" data-hover="dropdown" data-animations="none">
-                    <li class="dropdown menu-item">
-                        <a href="camara-noticias.html" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Notícias</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <div class="navbar-theme-content">
-                                    <div class="row">
-                                        <ul class="col-sm-3 theme-submenu">
-                                            <li><strong class="title-nolink">Temas</strong></li>
-                                            <li>
-                                                <a href="camara-noticias.html" class="font-bold text-green">Câmara Notícias</a>
-                                            </li>
-                                            <li><a href="macrotema-saude.html">Administração pública</a></li>
-                                            <li><a href="macrotema-saude.html">Direito e justiça</a></li>
-                                            <li><a href="macrotema-saude.html">Política</a></li>
-                                            <li><a href="macrotema-saude.html">Segurança</a></li>
-                                            <li><a href="macrotema-saude.html">Trabalho e previdência</a></li>
-                                            <li class="dropdown dropdown-submenu">
-                                                <a href="javascript:void(0)" class="dropdown-toggle submenu-item" data-toggle="dropdown" aria-expanded="false"><strong>Mais temas</strong></a>
-                                                <ul class="dropdown-menu submenu-secondlevel">
-                                                    <div class="row">
-                                                        <ul class="col-sm-4 list-unstyled">
-                                                            <div class="p-all">
-                                                                <li>
-                                                                    <a href="macrotema-saude.html">Administração Pública</a>
-                                                                </li>
-                                                                <li><a href="macrotema-saude.html">Direito e Justiça</a>
-                                                                </li>
-                                                                <li><a href="macrotema-saude.html">Política</a></li>
-                                                                <li><a href="macrotema-saude.html">Segurança</a></li>
-                                                                <li>
-                                                                    <a href="macrotema-saude.html">Trabalho e Previdência</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="macrotema-saude.html">Administração Pública</a>
-                                                                </li>
-                                                                <li><a href="macrotema-saude.html">Agropecuária</a></li>
-                                                                <li>
-                                                                    <a href="macrotema-saude.html">Assistência Social</a>
-                                                                </li>
-                                                                <li><a href="macrotema-saude.html">Turismo</a></li>
-                                                            </div>
-                                                        </ul>
-                                                        <ul class="col-sm-4 list-unstyled">
-                                                            <div class="p-all">
-                                                                <li><a href="macrotema-saude.html">Cidades</a></li>
-                                                                <li>
-                                                                    <a href="macrotema-saude.html">Ciência e Tecnologia</a>
-                                                                </li>
-                                                                <li><a href="macrotema-saude.html">Comunicação</a></li>
-                                                                <li><a href="macrotema-saude.html">Consumidor</a></li>
-                                                                <li><a href="macrotema-saude.html">Direito e Justiça</a>
-                                                                </li>
-                                                                <li><a href="macrotema-saude.html">Direitos Humanos</a>
-                                                                </li>
-                                                                <li><a href="macrotema-saude.html">Economia</a></li>
-                                                                <li>
-                                                                    <a href="macrotema-saude.html">Educação e Cultura</a>
-                                                                </li>
-                                                                <li><a href="macrotema-saude.html">Esportes</a></li>
-                                                            </div>
-                                                        </ul>
-                                                        <ul class="col-sm-4 list-unstyled">
-                                                            <div class="p-all">
-                                                                <li>
-                                                                    <a href="macrotema-saude.html">Indústria e Comércio</a>
-                                                                </li>
-                                                                <li><a href="macrotema-saude.html">Institucional</a>
-                                                                </li>
-                                                                <li><a href="macrotema-saude.html">Meio Ambiente</a>
-                                                                </li>
-                                                                <li><a href="macrotema-saude.html">Política</a></li>
-                                                                <li>
-                                                                    <a href="macrotema-saude.html">Relações Exteriores</a>
-                                                                </li>
-                                                                <li><a href="macrotema-saude.html">Saúde</a></li>
-                                                                <li><a href="macrotema-saude.html">Segurança</a></li>
-                                                                <li>
-                                                                    <a href="macrotema-saude.html">Trabalho e Previdência</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="macrotema-saude.html">Transporte e Trânsito</a>
-                                                                </li>
-                                                            </div>
-                                                        </ul>
-                                                    </div>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul class="col-sm-3 theme-submenu">
-                                            <li><strong class="title-nolink">TV Câmara</strong></li>
-                                            <li><a href="javascript:void(0)">Comissões ao vivo</a></li>
-                                            <li><a href="javascript:void(0)">Como sintonizar</a></li>
-                                            <li><a href="javascript:void(0)">Programação semanal</a></li>
-                                            <li><a href="javascript:void(0)">Conheça a tv câmara</a></li>
-                                            <li><a href="javascript:void(0)"><strong>Confira todos</strong></a></li>
-                                        
-                                        </ul>
-                                        <ul class="col-sm-3 theme-submenu">
-                                            <li><strong class="title-nolink">Rádio Câmara</strong></li>
-                                            <li><a href="javascript:void(0)">Como sintonizar</a></li>
-                                            <li><a href="javascript:void(0)">Programação semanal</a></li>
-                                            <li><a href="javascript:void(0)">Conheça a rádio</a></li>
-                                        
-                                        </ul>
-                                        <ul class="col-sm-3 theme-submenu">
-                                            <li><strong class="title-nolink">Mais</strong></li>
-                                            <li><a href="javascript:void(0)">Assessoria de Imprensa</a></li>
-                                            <li><a href="javascript:void(0)">Banco de Imagens</a></li>
-                                            <li><a href="javascript:void(0)">Rede Legislativa de Rádio e TV</a></li>
-                                            <li><a href="javascript:void(0)">Plenarinho</a></li>
-                                        
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown menu-item">
-                        <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Conheça</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <div class="navbar-theme-content">
-                                    <div class="row">
-                                        <ul class="col-sm-6 theme-submenu">
-                                            <li><strong class="title-nolink">A nossa casa</strong></li>
-                                            <li><a href="javascript:void(0)">História da Câmara</a></li>
-                                            <li><a href="javascript:void(0)">O papel da Câmara</a></li>
-                                            <li><a href="javascript:void(0)">Visite a Câmara</a></li>
-                                            <li><a href="javascript:void(0)">Institucional</a></li>
-                                            <li><a href="javascript:void(0)"><strong>Fale conosco</strong></a></li>
-                                        </ul>
-                                        <ul class="col-sm-6 theme-submenu">
-                                            <li><strong class="title-nolink">Deputados</strong></li>
-                                            <li><a href="deputados.html">Conheça os Deputados</a></li>
-                                            <li><a href="deputados.html">Discursos</a></li>
-                                            <li><a href="deputados.html">Lideranças partidárias</a></li>
-                                            <li><a href="deputados.html">Frentes e grupos parlamentares</a></li>
-                                        </ul>
-                                    
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown menu-item">
-                        <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Transparência</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <div class="navbar-theme-content">
-                                    <div class="row">
-                                        <ul class="col-sm-6 theme-submenu">
-                                            <li>
-                                                <a href="transparencia.html" class="font-bold text-green">Página da transparência</a>
-                                            </li>
-                                            <li><a href="transparencia.html">Acesso à Informação</a></li>
-                                            <li><a href="transparencia.html">Cota Parlamentar</a></li>
-                                            <li><a href="transparencia.html">Viagens oficiais e passaportes</a></li>
-                                            <li><a href="transparencia.html">Imóveis funcionais e auxílio-moradia</a>
-                                            </li>
-                                            <li><a href="transparencia.html">Licitações e contratos</a></li>
-                                            <li><a href="transparencia.html">Recursos humanos e concursos</a></li>
-                                            <li><a href="transparencia.html">Receitas e despesas</a></li>
-                                            <li><a href="transparencia.html">Dados abertos</a></li>
-                                        </ul>
-                                        <ul class="col-sm-6 theme-submenu">
-                                            <li><strong class="title-nolink">Orçamento da União</strong></li>
-                                            <li><a href="transparencia.html">Leis orçamentárias</a></li>
-                                            <li><a href="transparencia.html">Fiscalize</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown menu-item">
-                        <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Legislação</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <div class="navbar-theme-content">
-                                    <div class="row">
-                                        <ul class="col-sm-6 theme-submenu">
-                                            <li><a href="javascript:void(0)">Projetos de lei</a></li>
-                                            <li><a href="javascript:void(0)">Proposições</a></li>
-                                            <li><a href="javascript:void(0)">Legislação</a></li>
-                                        </ul>
-                                        <ul class="col-sm-6 theme-submenu">
-                                            <li><strong class="title-nolink">Deputados</strong></li>
-                                            <li><a href="deputados.html">Conheça os Deputados</a></li>
-                                            <li><a href="deputados.html">Discursos</a></li>
-                                            <li><a href="deputados.html">Lideranças partidárias</a></li>
-                                            <li><a href="deputados.html">Frentes e grupos parlamentares</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown menu-item">
-                        <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Agenda</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <div class="navbar-theme-content">
-                                    <div class="row">
-                                        <ul class="col-sm-12 theme-submenu">
-                                            <li><a href="javascript:void(0)">Agenda geral</a></li>
-                                            <li><a href="javascript:void(0)">Agenda de hoje</a></li>
-                                            <li><a href="javascript:void(0)">Plenário</a></li>
-                                            <li><a href="javascript:void(0)">Comissões</a></li>
-                                        </ul>
-                                    
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
+        
+            <div id="navbar-collapse-1" class="navbar-collapse collapse collapse-right">
+                <a href="javascript:void(0)" class="close-collapsenavbar fechanavbr" data-toggle="collapse" data-target="#navbar-collapse-1"><span class="ti-close"></span></a>
+            
+                <div class="container">
+                    <div class="nav-top clearfix">
+                        <div class="links-externos">
+                            <ul class="links-items">
+                                <li>
+                                    <a href="javascript:void(0)" class="icon-top" data-toggle="tooltip" data-placement="bottom" title="Site: Congresso Nacional"><img src="assets/img/icones/icones-home-congresso-black.svg" width="39px" height="auto" class="img-logo white-svg" title="Congresso nacional"></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="icon-top" data-toggle="tooltip" data-placement="bottom" title="Site: Senado"><img src="assets/img/icones/icones-home-senado-black.svg" width="16px" height="16px" class="img-logo white-svg" title="Senado nacional"></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="icon-top" data-toggle="tooltip" data-placement="bottom" title="Site: TCU"><img src="assets/img/icones/icones-home-tcu-black.svg" width="16px" height="16px" class="img-logo white-svg" title="TCU"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="links-ferramentas">
+                            <ul class="links-items">
+                                <li>
+                                    <a href="javascript:void(0)" class="icon-top" data-toggle="tooltip" data-placement="bottom" title="Fale conosco">
+                                        <span class="ti-email"></span><span class="hidden ml-sm">Fale conosco</span>
+                                    </a></li>
+                                <li>
+                                    <a href="javascript:void(0)" class="icon-top" data-toggle="tooltip" data-placement="bottom" title="Acessibilidade"><img src="assets/img/icones/vlibras.svg" width="20px" height="auto" title="Congresso nacional"></a>
+                                </li>
+                            </ul>
                     
-                    <li class="menu-item"><a href="participe.html" class="menu-item-principal">Participe!</a></li>
-                    <li>
-                        <div class="busca-desktop">
-                            <form class="search-form searchbar" role="search" id="hiddenSearchBox" action="resultado-busca.html" method="get">
-                                <div class="input-group">
-                                    <input type="hidden" name="id" value="63">
-                                    <input type="search" name="keywords" class="form-control" placeholder="Pesquisar">
-                                    <div class="input-group-btn">
-                                        <button type="submit" class="btn btn-default" data-toggle="searchbar" data-target="#hiddenSearchBox">
-                                            <span class="ti-search"></span> <span class="sr-only">enviar</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-</nav>
-<!-- /.nav -->
-
-
-<!-- wrapper -->
-<div class="wrapper">
-    <header>
-        <div class="header-macrotema back-light-gray">
-            <div class="container">
-                <div class="bck-macrotema" style="background-image: url('assets/img/estrutura/bck-senado.png')">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <h1>Conheça os deputados</h1>
-                        </div>
-                        <div class="col-sm-4 text-right">
-                            <!-- Single button -->
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-link text-blue text-uppercase dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Conheça mais sobre os deputados <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-right text-blue font-second" aria-labelledby="dLabel">
+                    </div>
+                </div>
+                <div class="navigation-main">
+                    <div class="container">
+                        <!-- Tornar hover de novo: <ul class="nav navbar-nav navigation-theme" data-hover="dropdown" data-animations="none">-->
+                        <ul class="nav navbar-nav navigation-theme" data-hover="dropdown" data-animations="none">
+                            <li class="dropdown menu-item">
+                                <a href="camara-noticias.html" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Notícias</a>
+                                <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#">Lideranças partidárias</a>
+                                        <div class="navbar-theme-content">
+                                            <div class="row">
+                                                <ul class="col-sm-3 theme-submenu">
+                                                    <li><strong class="title-nolink">Temas</strong></li>
+                                                    <li>
+                                                        <a href="camara-noticias.html" class="font-bold text-green">Câmara Notícias</a>
+                                                    </li>
+                                                    <li><a href="macrotema-saude.html">Administração pública</a></li>
+                                                    <li><a href="macrotema-saude.html">Direito e justiça</a></li>
+                                                    <li><a href="macrotema-saude.html">Política</a></li>
+                                                    <li><a href="macrotema-saude.html">Segurança</a></li>
+                                                    <li><a href="macrotema-saude.html">Trabalho e previdência</a></li>
+                                                    <li class="dropdown dropdown-submenu">
+                                                        <a href="javascript:void(0)" class="dropdown-toggle submenu-item" data-toggle="dropdown" aria-expanded="false"><strong>Mais temas</strong></a>
+                                                        <ul class="dropdown-menu submenu-secondlevel">
+                                                            <div class="row">
+                                                                <ul class="col-sm-4 list-unstyled">
+                                                                    <div class="p-all">
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Administração Pública</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Direito e Justiça</a>
+                                                                        </li>
+                                                                        <li><a href="macrotema-saude.html">Política</a>
+                                                                        </li>
+                                                                        <li><a href="macrotema-saude.html">Segurança</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Trabalho e Previdência</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Administração Pública</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Agropecuária</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Assistência Social</a>
+                                                                        </li>
+                                                                        <li><a href="macrotema-saude.html">Turismo</a>
+                                                                        </li>
+                                                                    </div>
+                                                                </ul>
+                                                                <ul class="col-sm-4 list-unstyled">
+                                                                    <div class="p-all">
+                                                                        <li><a href="macrotema-saude.html">Cidades</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Ciência e Tecnologia</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Comunicação</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Consumidor</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Direito e Justiça</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Direitos Humanos</a>
+                                                                        </li>
+                                                                        <li><a href="macrotema-saude.html">Economia</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Educação e Cultura</a>
+                                                                        </li>
+                                                                        <li><a href="macrotema-saude.html">Esportes</a>
+                                                                        </li>
+                                                                    </div>
+                                                                </ul>
+                                                                <ul class="col-sm-4 list-unstyled">
+                                                                    <div class="p-all">
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Indústria e Comércio</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Institucional</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Meio Ambiente</a>
+                                                                        </li>
+                                                                        <li><a href="macrotema-saude.html">Política</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Relações Exteriores</a>
+                                                                        </li>
+                                                                        <li><a href="macrotema-saude.html">Saúde</a>
+                                                                        </li>
+                                                                        <li><a href="macrotema-saude.html">Segurança</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Trabalho e Previdência</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="macrotema-saude.html">Transporte e Trânsito</a>
+                                                                        </li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="col-sm-3 theme-submenu">
+                                                    <li><strong class="title-nolink">TV Câmara</strong></li>
+                                                    <li><a href="javascript:void(0)">Comissões ao vivo</a></li>
+                                                    <li><a href="javascript:void(0)">Como sintonizar</a></li>
+                                                    <li><a href="javascript:void(0)">Programação semanal</a></li>
+                                                    <li><a href="javascript:void(0)">Conheça a tv câmara</a></li>
+                                                    <li><a href="javascript:void(0)"><strong>Confira todos</strong></a>
+                                                    </li>
+                                            
+                                                </ul>
+                                                <ul class="col-sm-3 theme-submenu">
+                                                    <li><strong class="title-nolink">Rádio Câmara</strong></li>
+                                                    <li><a href="javascript:void(0)">Como sintonizar</a></li>
+                                                    <li><a href="javascript:void(0)">Programação semanal</a></li>
+                                                    <li><a href="javascript:void(0)">Conheça a rádio</a></li>
+                                            
+                                                </ul>
+                                                <ul class="col-sm-3 theme-submenu">
+                                                    <li><strong class="title-nolink">Mais</strong></li>
+                                                    <li><a href="javascript:void(0)">Assessoria de Imprensa</a></li>
+                                                    <li><a href="javascript:void(0)">Banco de Imagens</a></li>
+                                                    <li><a href="javascript:void(0)">Rede Legislativa de Rádio e TV</a>
+                                                    </li>
+                                                    <li><a href="javascript:void(0)">Plenarinho</a></li>
+                                            
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </li>
-                                    <li>
-                                        <a href="#">Bancadas</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Suplentes em Exercício</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Deputados Federais – 55ª Legislatura (com fotos)</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Histórico de movimentação parlamentar</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Informações eleitorais</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Downloads</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">LISTA COMPLETA: informações e contatos dos Deputados</a>
-                                    </li>
-                                
                                 </ul>
-                            </div>
-                        </div>
+                            </li>
+                            <li class="dropdown menu-item">
+                                <a href="agenda.html" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Agenda</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="navbar-theme-content">
+                                            <div class="row">
+                                                <ul class="col-sm-12 theme-submenu">
+                                                    <li><a href="javascript:void(0)">Agenda geral</a></li>
+                                                    <li><a href="javascript:void(0)">Agenda de hoje</a></li>
+                                                    <li><a href="javascript:void(0)">Plenário</a></li>
+                                                    <li><a href="javascript:void(0)">Comissões</a></li>
+                                                </ul>
+                                        
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown menu-item">
+                                <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Conheça</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="navbar-theme-content">
+                                            <div class="row">
+                                                <ul class="col-sm-12 theme-submenu">
+                                                    <li><strong class="title-nolink">A nossa casa</strong></li>
+                                                    <li><a href="javascript:void(0)">História da Câmara</a></li>
+                                                    <li><a href="javascript:void(0)">O papel da Câmara</a></li>
+                                                    <li><a href="javascript:void(0)">Visite a Câmara</a></li>
+                                                    <li><a href="javascript:void(0)">Institucional</a></li>
+                                                    <li><a href="javascript:void(0)"><strong>Fale conosco</strong></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown menu-item">
+                                <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Legislação</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="navbar-theme-content">
+                                            <div class="row">
+                                                <ul class="col-sm-12 theme-submenu">
+                                                    <li><a href="javascript:void(0)">Projetos de lei</a></li>
+                                                    <li><a href="javascript:void(0)">Proposições</a></li>
+                                                    <li><a href="javascript:void(0)">Legislação</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown menu-item">
+                                <a href="deputados.html" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Deputados</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="navbar-theme-content">
+                                            <div class="row">
+                                                <ul class="col-sm-12 theme-submenu">
+                                                    <li><a href="deputados.html">Conheça os Deputados</a></li>
+                                                    <li><a href="deputados.html">Discursos</a></li>
+                                                    <li><a href="deputados.html">Lideranças partidárias</a></li>
+                                                    <li><a href="deputados.html">Frentes e grupos parlamentares</a></li>
+                                                </ul>
+                                        
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown menu-item">
+                                <a href="transparencia.html" data-toggle="dropdown" class="dropdown-toggle menu-item-principal">Transparência</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="navbar-theme-content">
+                                            <div class="row">
+                                                <ul class="col-sm-6 theme-submenu">
+                                                    <li>
+                                                        <a href="transparencia.html" class="font-bold text-green">Página da transparência</a>
+                                                    </li>
+                                                    <li><a href="transparencia.html">Acesso à Informação</a></li>
+                                                    <li><a href="transparencia.html">Cota Parlamentar</a></li>
+                                                    <li><a href="transparencia.html">Viagens oficiais e passaportes</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="transparencia.html">Imóveis funcionais e auxílio-moradia</a>
+                                                    </li>
+                                                    <li><a href="transparencia.html">Licitações e contratos</a></li>
+                                                    <li><a href="transparencia.html">Recursos humanos e concursos</a>
+                                                    </li>
+                                                    <li><a href="transparencia.html">Receitas e despesas</a></li>
+                                                    <li><a href="transparencia.html">Dados abertos</a></li>
+                                                </ul>
+                                                <ul class="col-sm-6 theme-submenu">
+                                                    <li><strong class="title-nolink">Orçamento da União</strong></li>
+                                                    <li><a href="transparencia.html">Leis orçamentárias</a></li>
+                                                    <li><a href="transparencia.html">Fiscalize</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        
+                        
+                            <li class="menu-item"><a href="participe.html" class="menu-item-principal">Participe!</a>
+                            </li>
+                            <li>
+                                <div class="busca-desktop">
+                                    <form class="search-form searchbar" role="search" id="hiddenSearchBox" action="resultado-busca.html" method="get">
+                                        <div class="input-group">
+                                            <input type="hidden" name="id" value="63">
+                                            <input type="search" name="keywords" class="form-control" placeholder="Pesquisar">
+                                            <div class="input-group-btn">
+                                                <button type="submit" class="btn btn-default" data-toggle="searchbar" data-target="#hiddenSearchBox">
+                                                    <span class="ti-search"></span> <span class="sr-only">enviar</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                
                 </div>
             </div>
-        </div>
-    </header>
     
-    <div class="container">
-        <div class="row row-offcanvas row-offcanvas-left">
-            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-                <div class="todos-deputados">
-                    <div class="filtro-deputados">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <label>
-                                    <small class="font-second">Filtre por nome, estado ou partido:</small>
-                                </label>
-                                <input id="filter_input" type="text" class="form-control" placeholder="Fitrar deputados">
-                            
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="lista-deputados" id="lista-deputados">
-                        <li class="lista-deputados-item">
+        </nav>
+        <!-- /.nav -->
+        
+        
+        <!-- wrapper -->
+        <div class="wrapper">
+            <header>
+                <div class="header-macrotema back-light-gray">
+                    <div class="container">
+                        <div class="bck-macrotema" style="background-image: url('assets/img/estrutura/bck-senado.png')">
                             <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ABEL MESQUITA JR.</strong><br>
-                                            <small class="text-gray">Pará - DEM</small>
-                                        </p>
-                                    </a>
+                                <div class="col-sm-12">
+                                    <h1>Conheça os deputados</h1>
                                 </div>
                             </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADAIL CARNEIRO</strong><br>
-                                            <small class="text-gray">Ceará - PR</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-008.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADELMO CARNEIRO LEÃO</strong><br>
-                                            <small class="text-gray">Paraíba - PT</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-009.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADEMIR CAMILO</strong><br>
-                                            <small class="text-gray">Roraima - PMDB</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADEMIR CAMILO</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ABEL MESQUITA JR.</strong><br>
-                                            <small class="text-gray">Distrito Federal - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADAIL CARNEIRO</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-008.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADELMO CARNEIRO LEÃO</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-009.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADEMIR CAMILO</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADEMIR CAMILO</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ABEL MESQUITA JR.</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADAIL CARNEIRO</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-008.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADELMO CARNEIRO LEÃO</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-009.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADEMIR CAMILO</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADEMIR CAMILO</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ABEL MESQUITA JR.</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADAIL CARNEIRO</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-008.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADELMO CARNEIRO LEÃO</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-009.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADEMIR CAMILO</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lista-deputados-item">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <div class="rouded-image-xs center-block">
-                                        <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <a href="javascript:void(0);">
-                                        <p>
-                                            <strong>ADEMIR CAMILO</strong><br>
-                                            <small class="text-gray">Ceará - DEM</small>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div><!--/span-->
-            <div class="col-xs-12 col-sm-9 content">
-                <div class="row mt-lg divider-bottom">
-                    <div class="col-sm-2">
-                        <div class="rouded-image-sm center-block">
-                            <a href="#"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-10 font-second">
                         
+                        </div>
+                    </div>
+                    <div class="subnavigation">
+                        
+                        <nav class="navbar navbar-subnavigation text-black">
+                            <div class="container">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span>Mais</span>
+                                    </button>
+                                </div>
+                                
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="#">Lideranças partidáriasr</a></li>
+                                        <li><a href="#">Bancadas</a></li>
+                                        <li><a href="#">Suplentes em Exercício</a></li>
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mais
+                                                <span class="caret"></span></a>
+                                            <ul class="dropdown-menu submenu-sm">
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <a href="#">Lideranças partidárias</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Bancadas</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Suplentes em Exercício</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Deputados Federais – 55ª Legislatura (com fotos)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Histórico de movimentação parlamentar</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Informações eleitorais</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Downloads</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">LISTA COMPLETA: informações e contatos dos Deputados</a>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                        </nav>
+                    
+                    </div>
+                </div>
+            </header>
+            
+            <div class="container-fluid">
+                <div class="row row-offcanvas row-offcanvas-left">
+                    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                        <div class="todos-deputados">
+                            <div class="filtro-deputados">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <label>
+                                            <small class="font-second">Filtre por nome, estado ou partido:</small>
+                                        </label>
+                                        <input id="filter_input" type="text" class="form-control" placeholder="Fitrar deputados">
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="lista-deputados" id="lista-deputados">
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ABEL MESQUITA JR.</strong><br>
+                                                    <small class="text-gray">Pará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADAIL CARNEIRO</strong><br>
+                                                    <small class="text-gray">Ceará - PR</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-008.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADELMO CARNEIRO LEÃO</strong><br>
+                                                    <small class="text-gray">Paraíba - PT</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-009.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADEMIR CAMILO</strong><br>
+                                                    <small class="text-gray">Roraima - PMDB</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADEMIR CAMILO</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ABEL MESQUITA JR.</strong><br>
+                                                    <small class="text-gray">Distrito Federal - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADAIL CARNEIRO</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-008.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADELMO CARNEIRO LEÃO</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-009.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADEMIR CAMILO</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADEMIR CAMILO</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ABEL MESQUITA JR.</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADAIL CARNEIRO</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-008.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADELMO CARNEIRO LEÃO</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-009.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADEMIR CAMILO</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADEMIR CAMILO</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ABEL MESQUITA JR.</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADAIL CARNEIRO</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-008.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADELMO CARNEIRO LEÃO</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-009.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADEMIR CAMILO</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lista-deputados-item">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="rouded-image-xs center-block">
+                                                <a href="javascript:void(0);"><img src="assets/img/fotos/deputados/dep-h-007.jpg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <a href="javascript:void(0);">
+                                                <p>
+                                                    <strong>ADEMIR CAMILO</strong><br>
+                                                    <small class="text-gray">Ceará - DEM</small>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/span-->
+                    <div class="col-xs-12 col-sm-9 content">
+                        <div class="row mt-lg divider-bottom">
+                            <div class="col-sm-2">
+                                <div class="rouded-image-sm center-block">
+                                    <a href="#"><img src="assets/img/fotos/deputados/dep-004.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-10 font-second">
+                                
+                                <div class="row">
+                                    <div class="col-xs-12"><label class="text-gray">Nome civil:</label>
+                                        <h4>ABEL SALVADOR MESQUITA JUNIOR</h4></div>
+                                </div>
+                                <div class="row fontsize-sm">
+                                    <div class="col-xs-4"><label class="text-gray mt-md">Aniversário:</label>
+                                        <p>29 / 3</p>
+                                    </div>
+                                    <div class="col-xs-4"><label class="text-gray mt-md">Partido/UF:</label>
+                                        <p>DEM / RR / Titular</p>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <img class="img-adaptative" width="80" src="assets/img/logos/dem-logo.png">
+                                    </div>
+                                </div>
+                                <div class="row font-second">
+                                    <div class="col-md-6"><label class="text-gray mt-md">Telefone:</label>
+                                        <p>(61) 3215-5248 <br> Fax: 3215-2248</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="text-gray mt-md">Legislaturas:</label>
+                                        <p>15/19</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-lg">
+                            <div class="col-sm-8">
+                                <canvas id="grafico-um"></canvas>
+                            </div>
+                            <div class="col-sm-4">
+                                <canvas id="grafico-dois"></canvas>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="row mt-lg">
+                            <div class="col-xs-12">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Projetos de sua autoria
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body fontsize-sm">
+                                                <ul class="list-unstyled">
+                                                    <li class="divider-bottom">
+                                                        <p>
+                                                            <small class="fontsize-sm">17/08/2017 - 10:54h</small>
+                                                        </p>
+                                                        <h5>Necessidade de apoio do Governo Federal ao Estado de Roraima diante do crescente fluxo de migrantes venezuelanos. Prejuízos causados à economia roraimense pela precariedade do sistema de energia elétrica.</h5>
+                                                        <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
+                                                    </li>
+                                                    <li class="divider-bottom">
+                                                        <p>
+                                                            <small class="fontsize-sm">17/08/2017 - 10:54h</small>
+                                                        </p>
+                                                        <h5>Votação nominal do parecer da Comissão de Constituição e Justiça e de Cidadania, pelo indeferimento da Solicitação para a Instauração do Processo nº 1, de 2017, a respeito de denúncia do Ministério Público Federal contra o Presidente Michel Temer.</h5>
+                                                        <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Projetos relatados
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body fontsize-sm">
+                                                <ul class="list-unstyled">
+                                                    <li class="divider-bottom">
+                                                        <p>
+                                                            <small class="fontsize-sm">17/08/2017 - 10:54h</small>
+                                                        </p>
+                                                        <h5>Necessidade de apoio do Governo Federal ao Estado de Roraima diante do crescente fluxo de migrantes venezuelanos. Prejuízos causados à economia roraimense pela precariedade do sistema de energia elétrica.</h5>
+                                                        <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
+                                                    </li>
+                                                    <li class="divider-bottom">
+                                                        <p>
+                                                            <small class="fontsize-sm">17/08/2017 - 10:54h</small>
+                                                        </p>
+                                                        <h5>Votação nominal do parecer da Comissão de Constituição e Justiça e de Cidadania, pelo indeferimento da Solicitação para a Instauração do Processo nº 1, de 2017, a respeito de denúncia do Ministério Público Federal contra o Presidente Michel Temer.</h5>
+                                                        <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Discursos em plenário
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body fontsize-sm">
+                                                <ul class="list-unstyled">
+                                                    <li class="divider-bottom">
+                                                        <p>
+                                                            <small class="fontsize-sm">17/08/2017 - 10:54h</small>
+                                                        </p>
+                                                        <h5>Necessidade de apoio do Governo Federal ao Estado de Roraima diante do crescente fluxo de migrantes venezuelanos. Prejuízos causados à economia roraimense pela precariedade do sistema de energia elétrica.</h5>
+                                                        <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
+                                                    </li>
+                                                    <li class="divider-bottom">
+                                                        <p>
+                                                            <small class="fontsize-sm">17/08/2017 - 10:54h</small>
+                                                        </p>
+                                                        <h5>Votação nominal do parecer da Comissão de Constituição e Justiça e de Cidadania, pelo indeferimento da Solicitação para a Instauração do Processo nº 1, de 2017, a respeito de denúncia do Ministério Público Federal contra o Presidente Michel Temer.</h5>
+                                                        <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    </div>
+                </div><!-- ./row-offcanvas-left -->
+            </div><!-- ./container-fluid -->
+        </div>
+        <!-- ./wrapper -->
+        
+        <footer>
+            <div class="footer-global">
+                <div class="footer-content">
+                    <div class="container">
                         <div class="row">
-                            <div class="col-xs-12"><label class="text-gray">Nome civil:</label>
-                                <h4>ABEL SALVADOR MESQUITA JUNIOR</h4></div>
-                        </div>
-                        <div class="row fontsize-sm">
-                            <div class="col-xs-4"><label class="text-gray mt-md">Aniversário:</label>
-                                <p>29 / 3</p>
-                            </div>
-                            <div class="col-xs-4"><label class="text-gray mt-md">Partido/UF:</label>
-                                <p>DEM / RR / Titular</p>
-                            </div>
-                            <div class="col-xs-4">
-                                <img class="img-adaptative" width="80" src="assets/img/logos/dem-logo.png">
-                            </div>
-                        </div>
-                        <div class="row font-second">
-                            <div class="col-md-6"><label class="text-gray mt-md">Telefone:</label>
-                                <p>(61) 3215-5248 <br> Fax: 3215-2248</p>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/logos/logo-camara-bw.png" class="img-adaptative">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="mt-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-6">
-                                <label class="text-gray mt-md">Legislaturas:</label>
-                                <p>15/19</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row mt-lg">
-                    <div class="col-sm-8">
-                        <canvas id="grafico-um"></canvas>
-                    </div>
-                    <div class="col-sm-4">
-                        <canvas id="grafico-dois"></canvas>
-                    </div>
-                </div>
-                
-                
-                <div class="row mt-lg">
-                    <div class="col-xs-12">
-                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingOne">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Projetos de sua autoria
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                    <div class="panel-body fontsize-sm">
-                                        <ul class="list-unstyled">
-                                            <li class="divider-bottom">
-                                                <p>
-                                                    <small class="fontsize-sm">17/08/2017 - 10:54h</small>
-                                                </p>
-                                                <h5>Necessidade de apoio do Governo Federal ao Estado de Roraima diante do crescente fluxo de migrantes venezuelanos. Prejuízos causados à economia roraimense pela precariedade do sistema de energia elétrica.</h5>
-                                                <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
-                                            </li>
-                                            <li class="divider-bottom">
-                                                <p>
-                                                    <small class="fontsize-sm">17/08/2017 - 10:54h</small>
-                                                </p>
-                                                <h5>Votação nominal do parecer da Comissão de Constituição e Justiça e de Cidadania, pelo indeferimento da Solicitação para a Instauração do Processo nº 1, de 2017, a respeito de denúncia do Ministério Público Federal contra o Presidente Michel Temer.</h5>
-                                                <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTwo">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Projetos relatados
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="panel-body fontsize-sm">
-                                        <ul class="list-unstyled">
-                                            <li class="divider-bottom">
-                                                <p>
-                                                    <small class="fontsize-sm">17/08/2017 - 10:54h</small>
-                                                </p>
-                                                <h5>Necessidade de apoio do Governo Federal ao Estado de Roraima diante do crescente fluxo de migrantes venezuelanos. Prejuízos causados à economia roraimense pela precariedade do sistema de energia elétrica.</h5>
-                                                <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
-                                            </li>
-                                            <li class="divider-bottom">
-                                                <p>
-                                                    <small class="fontsize-sm">17/08/2017 - 10:54h</small>
-                                                </p>
-                                                <h5>Votação nominal do parecer da Comissão de Constituição e Justiça e de Cidadania, pelo indeferimento da Solicitação para a Instauração do Processo nº 1, de 2017, a respeito de denúncia do Ministério Público Federal contra o Presidente Michel Temer.</h5>
-                                                <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingThree">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Discursos em plenário
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="panel-body fontsize-sm">
-                                        <ul class="list-unstyled">
-                                            <li class="divider-bottom">
-                                                <p>
-                                                    <small class="fontsize-sm">17/08/2017 - 10:54h</small>
-                                                </p>
-                                                <h5>Necessidade de apoio do Governo Federal ao Estado de Roraima diante do crescente fluxo de migrantes venezuelanos. Prejuízos causados à economia roraimense pela precariedade do sistema de energia elétrica.</h5>
-                                                <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
-                                            </li>
-                                            <li class="divider-bottom">
-                                                <p>
-                                                    <small class="fontsize-sm">17/08/2017 - 10:54h</small>
-                                                </p>
-                                                <h5>Votação nominal do parecer da Comissão de Constituição e Justiça e de Cidadania, pelo indeferimento da Solicitação para a Instauração do Processo nº 1, de 2017, a respeito de denúncia do Ministério Público Federal contra o Presidente Michel Temer.</h5>
-                                                <p>Fase: ORDEM DO DIA, Sessão: 219.3.55.O</p>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <div class="text-right">
+                                    <ul class="list-unstyled list-inline">
+                                        <li>
+                                            <a href="javascript:void(0)" class="btn btn-link btn-lg link-nodecoration" role="button"><span
+                                                    class="ti-facebook"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="btn btn-link btn-lg link-nodecoration" role="button">
+                                                <span class="ti-twitter"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="btn btn-link btn-lg link-nodecoration" role="button">
+                                                <span class="ti-youtube"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+                        <div class="mt-md site-map">
+                            <ul class="row">
+                                <li class="col-xs-12">
+                                    <a href="javascript:void(0)" class="text-uppercase"><strong>Notícias</strong></a>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <div class="row">
+                                                    <ul class="col-sm-3 theme-submenu list-unstyled">
+                                                        <li><strong class="title-nolink">Últimas Notícias</strong></li>
+                                                        <li><a href="javascript:void(0)">Administração pública</a></li>
+                                                        <li><a href="javascript:void(0)">Direito e justiça</a></li>
+                                                        <li><a href="javascript:void(0)">Política</a></li>
+                                                        <li><a href="javascript:void(0)">Segurança</a></li>
+                                                        <li><a href="javascript:void(0)">Trabalho e previdência</a></li>
+                                                        <li><a href="javascript:void(0)"><strong>Mais temas</strong></a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="col-sm-3 theme-submenu">
+                                                        <li><strong class="title-nolink">TV Câmara</strong></li>
+                                                        <li><a href="javascript:void(0)">Comissões ao vivo</a></li>
+                                                        <li><a href="javascript:void(0)">Como sintonizar</a></li>
+                                                        <li><a href="javascript:void(0)">Programação semanal</a></li>
+                                                        <li><a href="javascript:void(0)">Conheça a tv câmara</a></li>
+                                                        <li><a href="javascript:void(0)"><strong>Confira todos</strong></a>
+                                                        </li>
+                                                    
+                                                    </ul>
+                                                    <ul class="col-sm-3 theme-submenu">
+                                                        <li><strong class="title-nolink">Rádio Câmara</strong></li>
+                                                        <li><a href="javascript:void(0)">Como sintonizar</a></li>
+                                                        <li><a href="javascript:void(0)">Programação semanal</a></li>
+                                                        <li><a href="javascript:void(0)">Conheça a rádio</a></li>
+                                                    
+                                                    </ul>
+                                                    <ul class="col-sm-3 theme-submenu">
+                                                        <li><strong class="title-nolink">Mais</strong></li>
+                                                        <li><a href="javascript:void(0)">Assessoria de Imprensa</a></li>
+                                                        <li><a href="javascript:void(0)">Banco de Imagens</a></li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">Rede Legislativa de Rádio e TV</a>
+                                                        </li>
+                                                        <li><a href="javascript:void(0)">Plenarinho</a></li>
+                                                    
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-4">
+                                    <a href="javascript:void(0)" class="text-uppercase"><strong>Conheça</strong></a>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <div class="row">
+                                                    <ul class="col-sm-6 theme-submenu">
+                                                        <li><strong class="title-nolink">A nossa casa</strong></li>
+                                                        <li><a href="javascript:void(0)">História da Câmara</a>
+                                                        </li>
+                                                        <li><a href="javascript:void(0)">O papel da Câmara</a></li>
+                                                        <li><a href="javascript:void(0)">Visite a Câmara</a></li>
+                                                        <li><a href="javascript:void(0)">Institucional</a></li>
+                                                        <li>
+                                                            <a href="javascript:void(0)"><strong>Fale conosco</strong></a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="col-sm-6 theme-submenu">
+                                                        <li><strong class="title-nolink">Deputados</strong></li>
+                                                        <li><a href="javascript:void(0)">Conheça os Deputados</a></li>
+                                                        <li><a href="javascript:void(0)">Discursos</a></li>
+                                                        <li><a href="javascript:void(0)">Lideranças partidárias</a></li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">Frentes e grupos parlamentares</a>
+                                                        </li>
+                                                    </ul>
+                                                
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-4">
+                                    <a href="javascript:void(0)" class="text-uppercase"><strong>Transparência</strong></a>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <div class="row">
+                                                    <ul class="col-sm-6 theme-submenu">
+                                                        <li><a href="javascript:void(0)">Acesso à Informação</a></li>
+                                                        <li><a href="javascript:void(0)">Cota Parlamentar</a></li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">Viagens oficiais e passaportes</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">Imóveis funcionais e auxílio-moradia</a>
+                                                        </li>
+                                                        <li><a href="javascript:void(0)">Licitações e contratos</a></li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">Recursos humanos e concursos</a>
+                                                        </li>
+                                                        <li><a href="javascript:void(0)">Receitas e despesas</a></li>
+                                                        <li><a href="javascript:void(0)">Dados abertos</a></li>
+                                                    </ul>
+                                                    <ul class="col-sm-6 theme-submenu">
+                                                        <li><strong class="title-nolink">Orçamento da União</strong>
+                                                        </li>
+                                                        <li><a href="javascript:void(0)">Leis orçamentárias</a></li>
+                                                        <li><a href="javascript:void(0)">Fiscalize</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="col-md-2">
+                                    <a href="javascript:void(0)" class="text-uppercase"><strong>Agenda</strong></a>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <div class="row">
+                                                    <ul class="col-sm-12 theme-submenu">
+                                                        <li><a href="javascript:void(0)">Agenda geral</a></li>
+                                                        <li><a href="javascript:void(0)">Agenda de hoje</a></li>
+                                                        <li><a href="javascript:void(0)">Plenário</a></li>
+                                                        <li><a href="javascript:void(0)">Comissões</a></li>
+                                                    </ul>
+                                                
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="col-md-2">
+                                    <a href="javascript:void(0)" class="text-uppercase"><strong>Legislação</strong></a>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <div class="row">
+                                                    <ul class="col-sm-12 theme-submenu">
+                                                        <li><a href="javascript:void(0)">Projetos de lei</a></li>
+                                                        <li><a href="javascript:void(0)">Proposições</a></li>
+                                                        <li><a href="javascript:void(0)">Legislação</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-12">
+                                    <a href="javascript:void(0)" class="text-uppercase"><strong>Participe!</strong></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            
-            
-            </div>
-        </div><!-- ./row-offcanvas-left -->
-    </div><!-- ./container-fluid -->
-</div>
-<!-- ./wrapper -->
-
-<footer>
-    <div class="footer-global">
-        <div class="footer-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
+                    <div class="container mt-lg">
                         <div class="row">
-                            <div class="col-md-4">
-                                <img src="assets/img/logos/logo-camara-bw.png" class="img-adaptative">
-                            </div>
-                            <div class="col-md-8">
-                                <p class="mt-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="col-xs-12 text-center">
+                                <p>55ª Legislatura - 3ª Sessão Legislativa Ordinária</p>
+                                <p>Telefone: +55 (61) 3216-0000 | Disque-Câmara: 0800-619-619</p>
+                                <p>Câmara dos Deputados - Palácio do Congresso Nacional - Praça dos Três Poderes</p>
+                                <p>Brasília - DF - Brasil - CEP 70160-900CNPJ: 00.530.352/0001-59 | Horário de atendimento ao
+                                   público: 9h às 19h</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="text-right">
-                            <ul class="list-unstyled list-inline">
-                                <li>
-                                    <a href="javascript:void(0)" class="btn btn-link btn-lg link-nodecoration" role="button"><span
-                                            class="ti-facebook"></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" class="btn btn-link btn-lg link-nodecoration" role="button">
-                                        <span class="ti-twitter"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" class="btn btn-link btn-lg link-nodecoration" role="button">
-                                        <span class="ti-youtube"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="assina">
+                    <small>Câmara dos Deputados do Brasil, 2017 - Todos os direitos reservados</small>
+                </div>
+            </div>
+        </footer>
+        
+        
+        <!-- barra inferior para mobile -->
+        <div class="barra-apoio">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="barra-content">
+                        <a href="index.html" class="btn-barra">
+                            <span class="ti-home"></span>
+                        </a>
                     </div>
                 </div>
-                <div class="mt-md site-map">
-                    <ul class="row">
-                        <li class="col-xs-12">
-                            <a href="javascript:void(0)" class="text-uppercase"><strong>Notícias</strong></a>
-                            <ul>
-                                <li>
-                                    <div>
-                                        <div class="row">
-                                            <ul class="col-sm-3 theme-submenu list-unstyled">
-                                                <li><strong class="title-nolink">Últimas Notícias</strong></li>
-                                                <li><a href="javascript:void(0)">Administração pública</a></li>
-                                                <li><a href="javascript:void(0)">Direito e justiça</a></li>
-                                                <li><a href="javascript:void(0)">Política</a></li>
-                                                <li><a href="javascript:void(0)">Segurança</a></li>
-                                                <li><a href="javascript:void(0)">Trabalho e previdência</a></li>
-                                                <li><a href="javascript:void(0)"><strong>Mais temas</strong></a></li>
-                                            </ul>
-                                            <ul class="col-sm-3 theme-submenu">
-                                                <li><strong class="title-nolink">TV Câmara</strong></li>
-                                                <li><a href="javascript:void(0)">Comissões ao vivo</a></li>
-                                                <li><a href="javascript:void(0)">Como sintonizar</a></li>
-                                                <li><a href="javascript:void(0)">Programação semanal</a></li>
-                                                <li><a href="javascript:void(0)">Conheça a tv câmara</a></li>
-                                                <li><a href="javascript:void(0)"><strong>Confira todos</strong></a></li>
-                                            
-                                            </ul>
-                                            <ul class="col-sm-3 theme-submenu">
-                                                <li><strong class="title-nolink">Rádio Câmara</strong></li>
-                                                <li><a href="javascript:void(0)">Como sintonizar</a></li>
-                                                <li><a href="javascript:void(0)">Programação semanal</a></li>
-                                                <li><a href="javascript:void(0)">Conheça a rádio</a></li>
-                                            
-                                            </ul>
-                                            <ul class="col-sm-3 theme-submenu">
-                                                <li><strong class="title-nolink">Mais</strong></li>
-                                                <li><a href="javascript:void(0)">Assessoria de Imprensa</a></li>
-                                                <li><a href="javascript:void(0)">Banco de Imagens</a></li>
-                                                <li><a href="javascript:void(0)">Rede Legislativa de Rádio e TV</a></li>
-                                                <li><a href="javascript:void(0)">Plenarinho</a></li>
-                                            
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="col-md-4">
-                            <a href="javascript:void(0)" class="text-uppercase"><strong>Conheça</strong></a>
-                            <ul>
-                                <li>
-                                    <div>
-                                        <div class="row">
-                                            <ul class="col-sm-6 theme-submenu">
-                                                <li><strong class="title-nolink">A nossa casa</strong></li>
-                                                <li><a href="javascript:void(0)">História da Câmara</a>
-                                                </li>
-                                                <li><a href="javascript:void(0)">O papel da Câmara</a></li>
-                                                <li><a href="javascript:void(0)">Visite a Câmara</a></li>
-                                                <li><a href="javascript:void(0)">Institucional</a></li>
-                                                <li><a href="javascript:void(0)"><strong>Fale conosco</strong></a></li>
-                                            </ul>
-                                            <ul class="col-sm-6 theme-submenu">
-                                                <li><strong class="title-nolink">Deputados</strong></li>
-                                                <li><a href="javascript:void(0)">Conheça os Deputados</a></li>
-                                                <li><a href="javascript:void(0)">Discursos</a></li>
-                                                <li><a href="javascript:void(0)">Lideranças partidárias</a></li>
-                                                <li><a href="javascript:void(0)">Frentes e grupos parlamentares</a></li>
-                                            </ul>
-                                        
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="col-md-4">
-                            <a href="javascript:void(0)" class="text-uppercase"><strong>Transparência</strong></a>
-                            <ul>
-                                <li>
-                                    <div>
-                                        <div class="row">
-                                            <ul class="col-sm-6 theme-submenu">
-                                                <li><a href="javascript:void(0)">Acesso à Informação</a></li>
-                                                <li><a href="javascript:void(0)">Cota Parlamentar</a></li>
-                                                <li><a href="javascript:void(0)">Viagens oficiais e passaportes</a></li>
-                                                <li>
-                                                    <a href="javascript:void(0)">Imóveis funcionais e auxílio-moradia</a>
-                                                </li>
-                                                <li><a href="javascript:void(0)">Licitações e contratos</a></li>
-                                                <li><a href="javascript:void(0)">Recursos humanos e concursos</a></li>
-                                                <li><a href="javascript:void(0)">Receitas e despesas</a></li>
-                                                <li><a href="javascript:void(0)">Dados abertos</a></li>
-                                            </ul>
-                                            <ul class="col-sm-6 theme-submenu">
-                                                <li><strong class="title-nolink">Orçamento da União</strong></li>
-                                                <li><a href="javascript:void(0)">Leis orçamentárias</a></li>
-                                                <li><a href="javascript:void(0)">Fiscalize</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        <li class="col-md-2">
-                            <a href="javascript:void(0)" class="text-uppercase"><strong>Agenda</strong></a>
-                            <ul>
-                                <li>
-                                    <div>
-                                        <div class="row">
-                                            <ul class="col-sm-12 theme-submenu">
-                                                <li><a href="javascript:void(0)">Agenda geral</a></li>
-                                                <li><a href="javascript:void(0)">Agenda de hoje</a></li>
-                                                <li><a href="javascript:void(0)">Plenário</a></li>
-                                                <li><a href="javascript:void(0)">Comissões</a></li>
-                                            </ul>
-                                        
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        <li class="col-md-2">
-                            <a href="javascript:void(0)" class="text-uppercase"><strong>Legislação</strong></a>
-                            <ul>
-                                <li>
-                                    <div>
-                                        <div class="row">
-                                            <ul class="col-sm-12 theme-submenu">
-                                                <li><a href="javascript:void(0)">Projetos de lei</a></li>
-                                                <li><a href="javascript:void(0)">Proposições</a></li>
-                                                <li><a href="javascript:void(0)">Legislação</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="col-md-12">
-                            <a href="javascript:void(0)" class="text-uppercase"><strong>Participe!</strong></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container mt-lg">
-                <div class="row">
-                    <div class="col-xs-12 text-center">
-                        <p>55ª Legislatura - 3ª Sessão Legislativa Ordinária</p>
-                        <p>Telefone: +55 (61) 3216-0000 | Disque-Câmara: 0800-619-619</p>
-                        <p>Câmara dos Deputados - Palácio do Congresso Nacional - Praça dos Três Poderes</p>
-                        <p>Brasília - DF - Brasil - CEP 70160-900CNPJ: 00.530.352/0001-59 | Horário de atendimento ao
-                           público: 9h às 19h</p>
+                <div class="col-xs-4">
+                    <div class="barra-content">
+                        <a href="javascript:void(0)" class="barra-abre-navbar btn-barra" data-toggle="collapse" data-target="#navbar-collapse-1">
+                            <span class="ti-align-justify"></span>
+                        </a>
                     </div>
                 </div>
+                <div class="col-xs-4">
+                    <div class="barra-content">
+                        <button type="button" class="btn-barra btn-troca-deputados" data-toggle="offcanvas">Selecione o deputado</button>
+                    </div>
+                </div>
+            
             </div>
         </div>
-        <div class="assina">
-            <small>Câmara dos Deputados do Brasil, 2017 - Todos os direitos reservados</small>
-        </div>
-    </div>
-</footer>
-
-
-<!-- barra inferior para mobile -->
-<div class="barra-apoio">
-    <div class="row">
-        <div class="col-xs-4">
-            <div class="barra-content">
-                <a href="index.html" class="btn-barra">
-                    <span class="ti-home"></span>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-4">
-            <div class="barra-content">
-                <a href="javascript:void(0)" class="barra-abre-navbar btn-barra" data-toggle="collapse" data-target="#navbar-collapse-1">
-                    <span class="ti-align-justify"></span>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-4">
-            <div class="barra-content">
-                <button type="button" class="btn-barra btn-troca-deputados" data-toggle="offcanvas">Selecione o deputado</button>
-            </div>
-        </div>
+        <!-- fim da barra inferior -->
+        
+        
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/chart.bundle.min.js"></script>
+        
+        
+        <script src="assets/js/tether.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap-dropdownhover.min.js"></script>
+        <script src="assets/js/theme.js"></script>
+        <script src="assets/js/sidebar.js"></script>
+        
+        <script src="assets/js/transparencia-util.js"></script>
+        <script src="assets/js/deputados.js"></script>
+        <script src="assets/js/jquery.fastLiveFilter.js"></script>
+        <script>
+            $('#filter_input').fastLiveFilter('#lista-deputados');
+        </script>
     
-    </div>
-</div>
-<!-- fim da barra inferior -->
-
-
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/chart.bundle.min.js"></script>
-
-
-<script src="assets/js/tether.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap-dropdownhover.min.js"></script>
-<script src="assets/js/theme.js"></script>
-<script src="assets/js/sidebar.js"></script>
-
-<script src="assets/js/transparencia-util.js"></script>
-<script src="assets/js/deputados.js"></script>
-<script src="assets/js/jquery.fastLiveFilter.js"></script>
-<script>
-    $('#filter_input').fastLiveFilter('#lista-deputados');
-</script>
-
-</body>
+    </body>
 
 </html>
 

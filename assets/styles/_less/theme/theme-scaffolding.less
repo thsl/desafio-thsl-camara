@@ -198,12 +198,12 @@
 }
 
 .text-black {
-  color: @black !important;
+  color: @text-color !important;
   &.a {
-    color: @black !important;
+    color: @text-color !important;
   }
   a {
-    color: @black !important;
+    color: @text-color !important;
   }
 }
 
@@ -631,6 +631,7 @@ input[type=checkbox], input[type=radio] {
     height: auto;
   }
 }
+
 .rouded-image-sm {
   position: relative;
   width: 5em;
@@ -701,7 +702,7 @@ input[type=checkbox], input[type=radio] {
 }
 
 .back-light-blue {
-  background-color: @light-blue !important;
+  background-color: @blue-light-one !important;
 
 }
 
@@ -837,4 +838,30 @@ input[type=checkbox], input[type=radio] {
 
 .search-mark {
   background-color: #ffcf82;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.diamond {
+  position: relative;
+  height: 5em;
+  width: 5em;
+
+  text-align: center;
+  margin: 0 auto;
+  &:before {
+    position: absolute;
+    content: '';
+    top: -35%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: rotateX(45deg) rotateZ(45deg);
+    border: 1px solid @text-color;
+  }
 }

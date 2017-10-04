@@ -9,16 +9,19 @@
       }
     }
     > li.active > a {
+      color: #555;
+      cursor: default;
+      background-color: transparent;
+      border:0;
+      border-bottom: 3px solid #555;
     }
   }
   .tab-content {
     background-color: @white;
     padding: 2em 1em;
     border: 1px solid #ddd;
-    border-radius: @border-radius-md;
+    border-radius: 0;
     border-top: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
     .shadown-sm();
   }
 }

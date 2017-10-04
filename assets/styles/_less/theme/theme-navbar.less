@@ -50,6 +50,7 @@
     margin: 1.5em 0 0 0;
   }
   .menu-item {
+    cursor: pointer;
     //width: 16.666%;
     text-align: center;
     //font-size: @fontsize-lg;
@@ -83,37 +84,26 @@
     //margin: 0.5em 0 0 1em;
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 0.4em;
     margin-left: -9em;
     text-align: center;
     background-color: transparent;
     z-index: 3;
     width: 18em;
     @media (max-width: @screen-md) {
-      z-index: 0;
-      top: 1em;
+      z-index: 1;
+      top: 0.3em;
     }
     @media (max-width: @screen-sm) {
-      text-align: left;
+      width: 15em;
+      top: 0.6em;
+      z-index: 0;
     }
-    .logo{
-      margin: 0 auto 0 auto;
-      width: 18em;
-
-      @media (max-width: 360px) {
-        width: 16em;
-      }
-      @media (max-width: 330px) {
-        width: 15em;
-      }
-      @media (max-width: 315px) {
-        width: 12em;
-        margin-top: 0.25em;
-      }
-      @media (max-width: 250px) {
-        width: 8em;
-        margin-top: 0.25em;
-      }
+    @media (max-width: @screen-xs) {
+      width: 12em;
+      top: 1em;
+      left: 0;
+      margin-left: 0.5em;
     }
 
   }
@@ -152,7 +142,7 @@
       //position: relative;
       float: right;
       .links-items {
-        margin: 0;
+        margin: 0.5em 0 0 0;
         padding: 0.5em 3em 0 0;
         //margin-top: 0.5em;
         list-style: none;
@@ -162,7 +152,7 @@
           padding-left: 0.5em;
           margin-left: 0.5em;
           @media (max-width: @screen-sm) {
-            display: block;
+            //display: block;
             padding: 0.5em 0;
             margin: 0.5em 0;
             //border-bottom: 1px solid #e7e7e7;
@@ -799,6 +789,7 @@
         padding-bottom: 0;
         color: @text-color;
         text-shadow: none !important;
+
         &:first-child {
           border-top: 1px solid #e7e7e7 !important;
         }
@@ -818,6 +809,7 @@
         position: fixed;
         top: 7em;
         left: 1em;
+        right: 1em;
         .search-form {
           width: 100%;
         }
@@ -828,6 +820,7 @@
           }
         }
       }
+
 
       .close-collapsenavbar {
         display: block;

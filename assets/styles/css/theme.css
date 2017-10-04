@@ -373,13 +373,13 @@ small,
   color: #08456e !important;
 }
 .text-black {
-  color: #222 !important;
+  color: #333 !important;
 }
 .text-black.a {
-  color: #222 !important;
+  color: #333 !important;
 }
 .text-black a {
-  color: #222 !important;
+  color: #333 !important;
 }
 .text-light-blue {
   color: #00AEC1 !important;
@@ -759,7 +759,7 @@ input[type=radio] {
   background-color: #222 !important;
 }
 .back-light-blue {
-  background-color: #00AEC1 !important;
+  background-color: #2F94DE !important;
 }
 .back-light-blue-two {
   background-color: #3B5775 !important;
@@ -853,6 +853,29 @@ input[type=radio] {
 }
 .search-mark {
   background-color: #ffcf82;
+}
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.diamond {
+  position: relative;
+  height: 5em;
+  width: 5em;
+  text-align: center;
+  margin: 0 auto;
+}
+.diamond:before {
+  position: absolute;
+  content: '';
+  top: -35%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: rotateX(45deg) rotateZ(45deg);
+  border: 1px solid #333;
 }
 .mt-0 {
   margin-top: 0;
@@ -1487,6 +1510,14 @@ input[type=radio] {
     padding-right: 0;
   }
 }
+.conteudo-global {
+  padding: 3em 0;
+}
+@media (max-width: 768px) {
+  .conteudo-global {
+    background-color: #f5f5f5;
+  }
+}
 .special-striper-back {
   background-repeat: no-repeat;
   background-position: center center;
@@ -1550,31 +1581,131 @@ input[type=radio] {
 }
 .header-macrotema .bck-macrotema {
   background-size: contain;
-  background-position: center bottom;
+  background-position: right bottom;
   background-repeat: no-repeat;
-  padding: 1.5em 0 1em 0;
+  padding: 2em 0 1em 0;
 }
-.header-macrotema .bck-macrotema .dropdown-menu {
+.subnavigation {
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.subnavigation .navbar-subnavigation {
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  min-height: auto;
+}
+.subnavigation .navbar-subnavigation .navbar-nav {
+  margin: 0;
+}
+.subnavigation .navbar-subnavigation .icon-bar {
+  background-color: #fff;
+}
+.subnavigation .navbar-subnavigation .navbar-collapse {
+  padding: 0;
+}
+.subnavigation .navbar-subnavigation li {
+  border-bottom: 3px solid transparent;
+  background-color: transparent;
+}
+.subnavigation .navbar-subnavigation li:hover,
+.subnavigation .navbar-subnavigation li:focus {
+  background-color: transparent;
+}
+.subnavigation .navbar-subnavigation a {
+  padding: 0.5em 1em;
+  color: #fff;
+}
+.subnavigation .navbar-subnavigation a:hover,
+.subnavigation .navbar-subnavigation a:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.subnavigation .navbar-subnavigation .active {
+  border-bottom-color: #fff;
+  background: transparent;
+}
+.subnavigation .navbar-subnavigation .nav .open > a,
+.subnavigation .navbar-subnavigation .nav .open > a:focus,
+.subnavigation .navbar-subnavigation .nav .open > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.subnavigation .dropdown-menu {
   width: 600px;
   border-radius: 0;
 }
-.header-macrotema .bck-macrotema .dropdown-menu li {
+.subnavigation .dropdown-menu li {
   padding: 0.5em 0;
 }
+.subnavigation .dropdown-menu li a {
+  color: #333;
+}
 @media (max-width: 768px) {
-  .header-macrotema .bck-macrotema .dropdown-menu {
+  .subnavigation .dropdown-menu li a {
+    color: #fff;
+  }
+}
+@media (max-width: 768px) {
+  .subnavigation .dropdown-menu {
     width: 200px;
     left: -110px;
   }
 }
-.conteudo-global {
-  margin: 1.5em 0;
-  padding: 1.5em 0;
+.subnavigation .dropdown-menu.submenu-sm {
+  width: 24em;
 }
-@media (max-width: 768px) {
-  .conteudo-global {
-    background-color: #f5f5f5;
+@media (max-width: 992px) {
+  .subnavigation {
+    padding: 0 1em;
   }
+}
+.affix-top {
+  top: 32%;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+}
+.affix {
+  top: 3em;
+  right: 0;
+  z-index: 2;
+}
+.dot-nav {
+  z-index: 5;
+  left: 1em;
+  padding: 7px;
+  padding-top: 12px;
+}
+.dot-nav ul {
+  list-style: none;
+  margin: 0;
+}
+.dot-nav li {
+  position: relative;
+  background: none repeat scroll 0 0 #cccccc;
+  border: 1px solid #aaaaaa;
+  border-radius: 15px 15px 15px 15px;
+  cursor: pointer;
+  height: 0.5em;
+  margin: 10px 10px 0px 0px;
+  width: 0.5em;
+  vertical-align: bottom;
+}
+.dot-nav li:hover {
+  background: none repeat scroll 0 0 #EEEEEE;
+}
+.dot-nav li.active {
+  background-color: #ffffff;
+  background-image: -moz-linear-gradient(center top, #FFFFFF, #EEEEEE);
+  background-repeat: repeat-x;
+}
+.dot-nav a {
+  outline: 0;
+  vertical-align: top;
+  margin: 0px 0px 0px 25px;
+  position: relative;
+  top: -5px;
 }
 .special-striper-gray {
   background-color: #f5f5f5;
@@ -1586,6 +1717,21 @@ input[type=radio] {
   transition: 0.5s;
   overflow: hidden;
   height: 100%;
+}
+.modal-custom .modal-content {
+  border-radius: 0;
+  border: 0;
+}
+.modal-custom .modal-header {
+  padding: 3em;
+}
+.modal-custom .modal-header .close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+.modal-custom .modal-body {
+  padding: 3em;
 }
 .boxed-green-opaque {
   color: #fff;
@@ -1621,7 +1767,7 @@ input[type=radio] {
   color: inherit;
 }
 .separator a:hover {
-  color: #53b7f6;
+  color: #2F94DE;
   text-decoration: none;
 }
 .separator-white {
@@ -1743,6 +1889,7 @@ input[type=radio] {
   margin: 1.5em 0 0 0;
 }
 .navbar-theme .menu-item {
+  cursor: pointer;
   text-align: center;
 }
 @media (max-width: 768px) {
@@ -1774,7 +1921,7 @@ input[type=radio] {
 .navbar-theme .logo-camara {
   position: absolute;
   left: 50%;
-  top: 0;
+  top: 0.4em;
   margin-left: -9em;
   text-align: center;
   background-color: transparent;
@@ -1783,39 +1930,23 @@ input[type=radio] {
 }
 @media (max-width: 992px) {
   .navbar-theme .logo-camara {
-    z-index: 0;
-    top: 1em;
+    z-index: 1;
+    top: 0.3em;
   }
 }
 @media (max-width: 768px) {
   .navbar-theme .logo-camara {
-    text-align: left;
-  }
-}
-.navbar-theme .logo-camara .logo {
-  margin: 0 auto 0 auto;
-  width: 18em;
-}
-@media (max-width: 360px) {
-  .navbar-theme .logo-camara .logo {
-    width: 16em;
-  }
-}
-@media (max-width: 330px) {
-  .navbar-theme .logo-camara .logo {
     width: 15em;
+    top: 0.6em;
+    z-index: 0;
   }
 }
-@media (max-width: 315px) {
-  .navbar-theme .logo-camara .logo {
+@media (max-width: 480px) {
+  .navbar-theme .logo-camara {
     width: 12em;
-    margin-top: 0.25em;
-  }
-}
-@media (max-width: 250px) {
-  .navbar-theme .logo-camara .logo {
-    width: 8em;
-    margin-top: 0.25em;
+    top: 1em;
+    left: 0;
+    margin-left: 0.5em;
   }
 }
 .navbar-theme .nav-top {
@@ -1860,7 +1991,7 @@ input[type=radio] {
   float: right;
 }
 .navbar-theme .nav-top .links-ferramentas .links-items {
-  margin: 0;
+  margin: 0.5em 0 0 0;
   padding: 0.5em 3em 0 0;
   list-style: none;
   display: inline-table;
@@ -1872,7 +2003,6 @@ input[type=radio] {
 }
 @media (max-width: 768px) {
   .navbar-theme .nav-top .links-ferramentas .links-items > li {
-    display: block;
     padding: 0.5em 0;
     margin: 0.5em 0;
   }
@@ -2443,6 +2573,7 @@ input[type=radio] {
     position: fixed;
     top: 7em;
     left: 1em;
+    right: 1em;
   }
   .navbar-theme .navbar-collapse.collapse-right .busca-desktop .search-form {
     width: 100%;
@@ -2685,14 +2816,19 @@ input[type=radio] {
   font-size: 1em;
   font-weight: 700;
 }
+.custom-tabs .nav-tabs > li.active > a {
+  color: #555;
+  cursor: default;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 3px solid #555;
+}
 .custom-tabs .tab-content {
   background-color: #fff;
   padding: 2em 1em;
   border: 1px solid #ddd;
-  border-radius: 0.5em;
+  border-radius: 0;
   border-top: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 .form-group,
@@ -2877,6 +3013,7 @@ button {
   overflow-y: scroll;
   padding: 1em 1.5em;
   background-color: #fff;
+  background-color: #f5f5f5;
   -webkit-box-shadow: 10px 0px 5px -3px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 10px 0px 5px -3px rgba(0, 0, 0, 0.15);
   box-shadow: 10px 0px 5px -3px rgba(0, 0, 0, 0.15);
@@ -3001,8 +3138,112 @@ button {
 .todos-deputados .lista-deputados li:hover {
   background-color: #f5f5f5;
 }
+.todos-deputados .lista-deputados li a p {
+  font-size: 0.8em;
+}
 .todos-deputados .lista-deputados li a:hover {
   text-decoration: none;
+}
+.agenda-header .col-agenda-header {
+  float: left;
+  width: 11.1111%;
+  text-align: center;
+  margin: 2em 0;
+  padding: 2em 0.5em;
+  background-color: #f5f5f5;
+  position: relative;
+}
+.agenda-header .col-agenda-header a {
+  color: #333;
+  text-decoration: none;
+}
+.agenda-header .col-agenda-header.controler {
+  background-color: transparent;
+  padding: 3em 0 0 0;
+}
+.agenda-header .col-agenda-header.active {
+  background-color: #2F94DE;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 6px 2px -4px rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.agenda-header .col-agenda-header.active a {
+  color: #fff;
+  text-decoration: none;
+}
+.agenda-header .col-agenda-header.active::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: -0.5em;
+  bottom: -1.3em;
+  left: 40%;
+  box-sizing: border-box;
+  border: 0.7em solid black;
+  border-color: transparent transparent #2F94DE #2F94DE;
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+  box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.agenda-header .col-agenda-header .agenda-item {
+  min-height: 5em;
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.agenda-header .col-agenda-header .agenda-item .dia {
+  font-size: 1em;
+  display: block;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .agenda-header .col-agenda-header .agenda-item .dia {
+    font-size: 0.8em;
+  }
+}
+.agenda-header .col-agenda-header .agenda-item .data {
+  font-size: 1.953em;
+  display: block;
+}
+@media (max-width: 992px) {
+  .agenda-header .col-agenda-header .agenda-item .data {
+    font-size: 1em;
+  }
+}
+/*customiza o datepicker*/
+.datepicker td.active:hover,
+.datepicker td.active:hover:hover,
+.datepicker td.active:focus,
+.datepicker td.active:hover:focus,
+.datepicker td.active:active,
+.datepicker td.active:hover:active,
+.datepicker td.active.active,
+.datepicker td.active:hover.active,
+.datepicker td.active.disabled,
+.datepicker td.active:hover.disabled,
+.datepicker td.active[disabled],
+.datepicker td.active:hover[disabled],
+.datepicker td span.active:hover,
+.datepicker td span.active:focus,
+.datepicker td span.active:active,
+.datepicker td span.active.active,
+.datepicker td span.active.disabled,
+.datepicker td span.active[disabled] {
+  background-color: #2F94DE;
+  border-radius: 0;
+  background-image: none;
+}
+.datepicker {
+  font-family: "lato", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  z-index: 10;
+}
+.datepicker.datepicker-dropdown .datepicker-days,
+.datepicker.datepicker-dropdown .datepicker-months,
+.datepicker.datepicker-dropdown .datepicker-years {
+  width: 16em;
+}
+.history-main {
+  height: 20em;
+}
+.history-main .history-text {
+  height: 20em;
 }
 .dest-one .dest-a {
   color: #333;
@@ -3131,6 +3372,16 @@ button {
 }
 .categoria-news.categoria-light-blue .separator {
   color: #00AEC1;
+}
+.categoria-news.categoria-blue-light-one .header-categoria {
+  color: #2F94DE;
+  border-bottom-color: 2px solid #2F94DE;
+}
+.categoria-news.categoria-blue-light-one .header-categoria a {
+  color: #2F94DE;
+}
+.categoria-news.categoria-blue-light-one .separator {
+  color: #2F94DE;
 }
 .categoria-news.categoria-green .header-categoria {
   color: #286223;
@@ -3346,8 +3597,7 @@ blockquote.citacao cite:before {
 .transp-topo-intro {
   background-color: #005689;
   color: #fff;
-  min-height: 20em;
-  padding: 3em 0;
+  padding: 3em 0 0 0;
   background: url("../../img/desenhos/tranp-lupa.png") no-repeat bottom right #005689;
   background-size: contain;
 }
@@ -3365,8 +3615,7 @@ blockquote.citacao cite:before {
 .participe-topo-intro {
   background-color: #229D59;
   color: #fff;
-  min-height: 20em;
-  padding: 3em 0 4em 0;
+  padding: 3em 0 0 0;
 }
 .participe-topo-intro a {
   color: #fff;
