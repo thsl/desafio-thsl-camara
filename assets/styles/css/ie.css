@@ -14,3 +14,12 @@
 }
 
 
+:root .history-img .dest-image .dest-pic-cover .dest-img{
+    min-width: auto\0/IE9 !important;
+    min-height: auto\0/IE9 !important;
+    width: 100%\0/IE9 !important;
+}
+
+:root .history-main .history-img .dest-image{
+    padding-top: 60%\0/IE9 !important;
+}

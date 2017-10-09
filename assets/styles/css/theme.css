@@ -3240,10 +3240,54 @@ button {
   width: 16em;
 }
 .history-main {
-  height: 20em;
+  height: auto;
+}
+.history-main:before,
+.history-main:after {
+  content: " ";
+  display: table;
+}
+.history-main:after {
+  clear: both;
 }
 .history-main .history-text {
-  height: 20em;
+  position: relative;
+  height: auto;
+  text-align: center;
+  padding: 15% 4em 0 4em;
+}
+.history-main .history-text .history-text-content {
+  position: relative;
+  margin: 25% auto 0 auto;
+}
+.history-main .history-text .history-text-content:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: #8C8C8C;
+  bottom: -5em;
+  left: 50%;
+  height: auto;
+  padding-bottom: 3em;
+}
+.history-main .history-text .history-text-content:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: #8C8C8C;
+  top: -7em;
+  left: 50%;
+  height: auto;
+  padding-bottom: 3em;
+}
+.history-main .history-img {
+  height: auto;
+}
+.history-main .history-img .dest-image {
+  border: 0;
+  border-radius: 0;
+  padding-top: 100%;
+  margin: 0;
 }
 .dest-one .dest-a {
   color: #333;
