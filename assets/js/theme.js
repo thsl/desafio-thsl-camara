@@ -1,28 +1,6 @@
 // menu superior
 
-$(document).on('click', '.navbar-theme .dropdown-menu', function (e) {
-    e.stopPropagation()
-});
 
-$(document).ready(function () {
-    if (window.matchMedia('(min-width: 767px)').matches) {
-        $('.navigation-theme > li > .dropdown-toggle').click(function () {
-            window.location = $(this).attr('href');
-        });
-    }
-});
-
-$('.barra-abre-navbar').on('click', function () {
-    $('.navbar-collapse').collapse('hide');
-});
-$(".barra-abre-navbar").click(function () {
-    $("body").toggleClass("nav-open")
-});
-// faz o bloqueio do body quando o menu esta aberto
-
-$(".fechanavbr").click(function () {
-    $("body").toggleClass("nav-open")
-});
 
 $('.theme-alert-close').click(function () {
     $('.theme-alert').hide();
@@ -204,4 +182,29 @@ $(".modal").on("shown.bs.modal", function () { // any time a modal is shown
 // If a pushstate has previously happened and the back button is clicked, hide any modals.
 $(window).on('popstate', function () {
     $(".modal").modal('hide');
+});
+
+
+$(document).on('click', '.navbar-theme .dropdown-menu', function (e) {
+    e.stopPropagation()
+});
+
+$(document).ready(function () {
+    if (window.matchMedia('(min-width: 767px)').matches) {
+        $('.navigation-theme > li > .dropdown-toggle').click(function () {
+            window.location = $(this).attr('href');
+        });
+    }
+});
+
+$('.barra-abre-navbar').on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+});
+$(".barra-abre-navbar").click(function () {
+    $("body").toggleClass("nav-open")
+});
+// faz o bloqueio do body quando o menu esta aberto
+
+$(".fechanavbr").click(function () {
+    $("body").toggleClass("nav-open")
 });

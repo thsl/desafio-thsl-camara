@@ -458,31 +458,108 @@
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="form-group">
-                                                    <label for="buscaprop">Texto da proposição</label>
+                                                    <label for="buscaprop">Texto ou número da proposição</label>
                                                     <input type="buscaprop" class="form-control" id="buscaprop" placeholder="Texto da proposição">
                                                 
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <label for="buscaprop">Texto da proposição</label>
-                                                <select class="form-control">
-                                                    
-                                                    <option value="" disabled selected>Selecione o tipo
-                                                    </option>
-                                                    <option>Projeto de Lei</option>
-                                                    <option>Projeto de Lei Complementar</option>
-                                                    <option>Medida Provisória</option>
-                                                    <option>Proposta de Emenda à Constituição</option>
-                                                    <option>Projeto de Decreto Legislativo</option>
+                                                <label for="buscaprop">Tipo da proposição</label>
+                                                <p>
+                                                    <select class="selectpicker form-control">
+                                                        <option value="" disabled>Selecione o tipo
+                                                        </option>
+                                                        <option>Projeto de Lei</option>
+                                                        <option>Projeto de Lei Complementar</option>
+                                                        <option>Medida Provisória</option>
+                                                        <option>Proposta de Emenda à Constituição</option>
+                                                        <option>Projeto de Decreto Legislativo</option>
+                                                    </select>
+                                                
+                                                </p>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="row m-md">
+                                        <div class="col-md-6">
+                                            <label for="">Categoria da proposição</label>
+                                            <p>
+                                                <select class="selectpicker form-control" multiple data-live-search="true" data-actions-box="true">
+                                                    <optgroup label="Mais procurados">
+                                                        <option>PEC - Proposta de Emenda à Constituição</option>
+                                                        <option>PLP - Projeto de Lei Complementar</option>
+                                                        <option>PL - Projeto de Lei</option>
+                                                        <option>MPV - Medida Provisória</option>
+                                                        <option>PLV - Projeto de Lei de Conversão</option>
+                                                        <option>PDC - Projeto de Decreto Legislativo</option>
+                                                        <option>PRC - Projeto de Resolução</option>
+                                                        <option>REQ - Requerimento</option>
+                                                        <option>RIC - Requerimento de Informação</option>
+                                                        <option>RCP - Requerimento de Instituição de CPI</option>
+                                                        <option>MSC - Mensagem</option>
+                                                        <option>INC - Indicação</option>
+                                                    </optgroup>
+                                                    <optgroup label="Outros tipos">
+                                                        <option>PRR - Parecer Reformulado</option>
+                                                        <option>PRV - Parecer Vencedor</option>
+                                                        <option>PRVP - Proposta de Redação do Vencido em Primeiro Turno</option>
+                                                        <option>PSS - Parecer às Emendas ou ao Substitutivo do Senado - Notas Taquigráficas</option>
+                                                        <option>R.C - Recurso do Congresso Nacional</option>
+                                                        <option>RAT - Relatório Setorial</option>
+                                                        <option>RDF - Redação Final</option>
+                                                        <option>RDV - Redação do Vencido</option>
+                                                        <option>REC - Recurso</option>
+                                                        <option>REL - Relatório</option>
+                                                        <option>REM - Reclamação</option>
+                                                        <option>REP - Representação</option>
+                                                        <option>RIN - Requerimento de Resolução Interna</option>
+                                                        <option>RLF - Relatório Final</option>
+                                                        <option>RLP - Relatório Prévio</option>
+                                                        <option>RLP(R) - Relatório Prévio Reformulado</option>
+                                                        <option>RLP(V) - Relatório Prévio Vencedor</option>
+                                                        <option>RPA - Relatório Parcial</option>
+                                                        <option>RPL - Relatório Preliminar</option>
+                                                        <option>RPLE - Relatório Preliminar Apresentado com Emendas</option>
+                                                        <option>RPLOA - Relatório Preliminar</option>
+                                                        <option>RQA - Requerimento de Informações da Assembleia Constituinte - 1987/88</option>
+                                                        <option>RQC - RQC</option>
+                                                        <option>RRC - Relatório de Receita</option>
+                                                        <option>RRL - Relatório do Relator</option>
+                                                        <option>RST - Redação para o segundo turno</option>
+                                                        <option>RTV - Mensagem de Rádio e Televisão</option>
+                                                        <option>SAP - Subemenda Aglutinativa Substitutiva de Plenário</option>
+                                                        <option>SBE - Subemenda</option>
+                                                        <option>SBE-A - Subemenda Adotada pela Comissão</option>
+                                                        <option>SBR - Subemenda de Relator</option>
+                                                        <option>SBT - Substitutivo</option>
+                                                        <option>SBT-A - Substitutivo adotado pela Comissão</option>
+                                                        <option>SDL - Sugestão de Emenda à LDO - CLP</option>
+                                                        <option>SIP - Solicitação para instauração de processo</option>
+                                                        <option>SIT - Solicitação de Informação ao TCU</option>
+                                                        <option>SLD - Sugestão de Emenda à LDO - Comissões</option>
+                                                        <option>SOA - Sugestão de Emenda ao Orçamento - CLP</option>
+                                                        <option>SOR - Sugestão de Emenda ao Orçamento - Comissões</option>
+                                                        <option>SPA - Sugestão de Emenda ao PPA - CLP</option>
+                                                        <option>SPA-R - Sugestão de Emenda ao PPA - revisão (CLP)</option>
+                                                        <option>SPP - Sugestão de Emenda ao PPA - Comissões</option>
+                                                        <option>SPP-R - Sugestão de Emenda ao PPA - revisão (Comissões)</option>
+                                                        <option>SRL - Sugestão de Emenda a Relatório</option>
+                                                        <option>SSP - Subemenda Substitutiva de Plenário</option>
+                                                        <option>SUC - Sugestão a Projeto de Consolidação de Leis</option>
+                                                        <option>SUG - Sugestão</option>
+                                                        <option>SUM - Súmula</option>
+                                                        <option>TER - Termo de Implementação</option>
+                                                        <option>TVR - Ato de Concessão e Renovação de Concessão de Emissora de Rádio e Televisão</option>
+                                                        <option>VTS - Voto em Separado</option>
+                                                    </optgroup>
                                                 </select>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <button type="submit" class="btn btn-primary mb-md">
-                                                    <span class="ti-search"></span>
-                                                </button>
-                                                <small class="help-block">Utilize números ou letras
-                                                </small>
-                                            </div>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button type="submit" class="btn btn-primary mt-lg">
+                                                <span class="ti-search"></span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -495,7 +572,7 @@
                 <div class="container">
                     <div class="row">
                         <!-- inicio da coluna menor -->
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="padding-bigcontent">
                                 <section>
                                     
@@ -572,7 +649,7 @@
                         
                         </div>
                         <!-- ./fim da coluna menor -->
-                        <div class="col-md-8">
+                        <div class="col-md-9">
                             <div class="custom-tabs padding-bigcontent pb-md">
                                 <!-- Nav tabs -->
                                 <ul class="nav nav-tabs" role="tablist">
@@ -938,7 +1015,15 @@
         <script src="assets/js/tether.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/bootstrap-dropdownhover.min.js"></script>
+        <script src="assets/js/bootstrap-select.js"></script>
+        <script src="assets/js/defaults-pt_BR.js"></script>
         <script src="assets/js/theme.js"></script>
+        <script>
+            $('.selectpicker').selectpicker({
+                dropupAuto: false
+            });
+        </script>
+    
     </body>
 
 </html>
